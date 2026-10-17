@@ -70,6 +70,6 @@ CLI 显式指定的视图、方向优先。隐藏资源与布局间距会生效�
 
 目前是可运行的 MVP 基线，尚未完成全部验收：更多同构聚合策略、部分高级路由推导、历史/deposed 对象、人工布局仍待增强。AWS 图标仅使用 2026-10-17 在 app.diagrams.net 中确认存在的模具名称；旧版和离线版 diagrams.net 未经验证（即使图标缺失，卡片文字仍可阅读）。大图打印可能跨页。未知资源以通用节点保留。
 
-详见 [开发结果](docs/development-report.md)、[限制](docs/limitations.md)、[安全说明](docs/security.md)、[性能实测](docs/performance-results.json)。九组数据集参与回归测试；08 为确定性的 200 资源合成样本。原有样本来源见各目录 PROVENANCE.json，本轮未重新运行 Terraform 核验原有来源声明。CI 已配置 Windows/Linux/macOS 与 Node 22/24，远端执行情况仍需 GitHub 实际运行确认。
+详见 [开发结果](docs/development-report.md)、[限制](docs/limitations.md)、[安全说明](docs/security.md)、[性能实测](docs/performance-results.json)。九组数据集参与回归测试；08 为确定性的 200 资源合成样本。原有样本来源见各目录 PROVENANCE.json，本轮未重新运行 Terraform 核验原有来源声明。GitHub Actions 在 Windows/Linux/macOS × Node 22/24 的全部 6 个任务已通过（2026-10-17）。
 
 扩展 AWS 规则应修改独立 providers-aws 层，避免把业务语义写入 XML。开发、模型与路线图见 docs 目录。预期以 Apache-2.0 发布，许可证见 LICENSE。

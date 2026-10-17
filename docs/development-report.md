@@ -38,9 +38,8 @@ Still outstanding (unchanged unless noted):
 - ECS/Multi-AZ aggregation.
 - Advanced routing.
 - Manual positions and annotations.
-- GitHub CI and Linux/macOS runs.
 
-No commit, push, Terraform run or AWS access occurred.
+GitHub Actions run 39027632067 (commit d695650, 2026-10-17): all 6 jobs passed — ubuntu/macos/windows-latest × Node 22/24, each running install, typecheck, build, test, lint, examples and verify:drawio. No Terraform run or AWS access occurred.
 
 ## Continuation 1
 
@@ -76,8 +75,8 @@ Host: Windows, Node v24.20.0, Intel Core i7-12650H, 32 GiB RAM.
 | Test-secret leakage | Supplied marker absent from graph/export and tested CLI logs |
 | Layout geometry | Four representative Network datasets have no tested sibling overlap or out-of-container child bounds |
 | diagrams.net interactive editing | Not performed; manual acceptance pending |
-| GitHub-hosted CI | Configuration added; remote execution not observed |
-| Linux/macOS runtime checks | Not executed locally |
+| GitHub-hosted CI | Passed later (see continuation 2) |
+| Linux/macOS runtime checks | Passed in GitHub Actions (continuation 2) |
 | Real Terraform/OpenTofu regeneration | Not executed in this continuation |
 
 The test suite includes independent assertions and generated snapshots. All expected relation snapshots are compared, but their semantic content still requires independent review; they were generated from the implementation. Existing real-CLI provenance is inherited from previous work and has not been independently regenerated.

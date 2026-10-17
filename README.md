@@ -72,4 +72,4 @@ The current implementation is a working MVP baseline with explicit remaining acc
 
 The workspace separates schemas, graph core, Terraform/OpenTofu adapters, AWS semantic rules, view intelligence, ELK layout and XML rendering. Add provider rules without modifying the renderer. See [architecture](docs/architecture.md), [AWS rules](docs/aws-rules.md), [testing](docs/testing.md) and [roadmap](docs/roadmap.md). Tests use all nine fixture groups, including a deterministic 200-resource synthetic sample. Original fixture provenance is recorded per dataset; inherited CLI provenance has not been independently regenerated in this development continuation.
 
-CI is configured for Windows, Linux and macOS on Node 22/24. Local verification does not prove remote CI execution. The source is intended for Apache-2.0 distribution; see LICENSE.
+GitHub Actions passed on Windows, Linux and macOS with Node 22/24 (all 6 jobs, 2026-10-17). The source is intended for Apache-2.0 distribution; see LICENSE.

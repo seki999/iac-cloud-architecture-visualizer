@@ -15,6 +15,6 @@
 - Dense labels and large printable layouts still require manual adjustment. A4/A3 page sizes do not guarantee a one-page readable export.
 - Arbitrary unmarked secrets cannot all be recognized. The CLI enforces an input size limit, refuses symlink/hard-link destinations that alias inputs and writes atomically; no comprehensive security audit is claimed.
 - Dataset 08/09 have synthetic JSON and provenance-only HCL notices, not equivalent deployable HCL. Existing CLI provenance was not rerun in this continuation.
-- Local Windows verification is recorded; GitHub CI and Linux/macOS execution still require real runners. Library npm distribution is not packaged yet.
+- GitHub Actions run 39027632067 (commit d695650, 2026-10-17): all 6 jobs passed — ubuntu/macos/windows-latest × Node 22/24, each running install, typecheck, build, test, lint, examples and verify:drawio. Library npm distribution is not packaged yet.
 
 These items mean the entire requested Definition of Done is not yet satisfied.

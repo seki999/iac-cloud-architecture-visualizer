@@ -68,6 +68,6 @@ CLI で明示した view/direction が設定ファイルより優先されます
 
 現在は実行可能な MVP 基盤です。集約戦略の拡充、高度な経路推論、履歴/deposed オブジェクト、手動配置などに未完了項目があります。AWS アイコンは 2026-10-17 に app.diagrams.net で存在を確認したステンシル名のみを使用します。旧版・オフライン版 diagrams.net は未検証です（アイコンが表示されなくてもカードのラベルは読めます）。大規模図の印刷は複数ページになる場合があります。未知のリソースは汎用ノードとして残します。
 
-[開発結果](docs/development-report.md)、[制限](docs/limitations.md)、[安全性](docs/security.md)、[性能測定](docs/performance-results.json) を参照してください。9データセットを回帰検証し、08 は200リソースの決定的な合成サンプルです。既存サンプルの出所は PROVENANCE.json に記載されていますが、今回の継続作業では元の CLI 出力を再生成していません。CI は Windows/Linux/macOS、Node 22/24 用に設定済みで、リモート実行の成功は別途確認が必要です。
+[開発結果](docs/development-report.md)、[制限](docs/limitations.md)、[安全性](docs/security.md)、[性能測定](docs/performance-results.json) を参照してください。9データセットを回帰検証し、08 は200リソースの決定的な合成サンプルです。既存サンプルの出所は PROVENANCE.json に記載されていますが、今回の継続作業では元の CLI 出力を再生成していません。GitHub Actions（Windows/Linux/macOS × Node 22/24）の全6ジョブが成功しています（2026-10-17）。
 
 AWS の意味規則は providers-aws 層で拡張し、XML レンダラーには組み込まないでください。設計、テスト、ロードマップは docs を参照してください。Apache-2.0 での配布を想定し、LICENSE にライセンスを記載しています。
