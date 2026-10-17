@@ -1,0 +1,44 @@
+[
+  {
+    "source": "aws_instance.worker",
+    "target": "aws_s3_bucket.data",
+    "type": "depends_on",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.worker",
+    "target": "aws_subnet.fresh",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_instance.worker",
+    "target": "aws_security_group.web",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_security_group.web",
+    "target": "aws_vpc.fresh",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.fresh",
+    "target": "aws_vpc.fresh",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.fresh",
+    "target": "aws_instance.worker",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.fresh",
+    "target": "aws_subnet.fresh",
+    "type": "contains",
+    "knowledge": "inferred"
+  }
+]

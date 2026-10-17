@@ -1,0 +1,20 @@
+{
+  "name": "@iacviz/layout",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ELKjs-based compound layout with deterministic fallback",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --root ../.. packages/layout"
+  },
+  "dependencies": {
+    "@iacviz/core": "workspace:*",
+    "elkjs": "^0.9.3"
+  }
+}

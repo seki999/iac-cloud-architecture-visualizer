@@ -1,0 +1,12 @@
+{
+  "state.json": {
+    "origin": "synthetic-generator",
+    "count": 200,
+    "rule": "scripts/generate-dataset-08.mjs"
+  },
+  "plan.json": {
+    "origin": "synthetic-generator",
+    "count": 200,
+    "rule": "scripts/generate-dataset-08.mjs"
+  }
+}

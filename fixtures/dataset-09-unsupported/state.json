@@ -1,0 +1,69 @@
+{
+  "format_version": "1.0",
+  "terraform_version": "1.16.2",
+  "values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_vpc.supported_vpc",
+          "mode": "managed",
+          "type": "aws_vpc",
+          "name": "supported_vpc",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "vpc-0123456789abcdef0",
+            "cidr_block": "10.90.0.0/16",
+            "tags": { "Name": "ds09-supported-vpc" }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "google_compute_instance.custom_gcp",
+          "mode": "managed",
+          "type": "google_compute_instance",
+          "name": "custom_gcp",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "id": "gcp-instance-123",
+            "name": "demo-gcp-instance",
+            "machine_type": "e2-medium",
+            "zone": "us-central1-a"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "azurerm_virtual_network.custom_azure",
+          "mode": "managed",
+          "type": "azurerm_virtual_network",
+          "name": "custom_azure",
+          "provider_name": "registry.terraform.io/hashicorp/azurerm",
+          "schema_version": 0,
+          "values": {
+            "id": "azure-vnet-123",
+            "name": "demo-azure-vnet",
+            "location": "eastus"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "random_password.secret",
+          "mode": "managed",
+          "type": "random_password",
+          "name": "secret",
+          "provider_name": "registry.terraform.io/hashicorp/random",
+          "schema_version": 0,
+          "values": {
+            "id": "none",
+            "length": 16,
+            "result": "random_pass_secret"
+          },
+          "sensitive_values": {
+            "result": true
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@iacviz/cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CLI tool for IaC Cloud Architecture Visualizer",
+  "type": "module",
+  "bin": {
+    "iacviz": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run --root ../.. apps/cli"
+  },
+  "dependencies": {
+    "@iacviz/architecture-intelligence": "workspace:*",
+    "@iacviz/core": "workspace:*",
+    "@iacviz/layout": "workspace:*",
+    "@iacviz/opentofu-adapter": "workspace:*",
+    "@iacviz/providers-aws": "workspace:*",
+    "@iacviz/renderer-drawio": "workspace:*",
+    "@iacviz/schemas": "workspace:*",
+    "@iacviz/terraform-adapter": "workspace:*",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2"
+  }
+}

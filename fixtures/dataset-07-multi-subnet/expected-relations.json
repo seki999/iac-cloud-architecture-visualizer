@@ -1,0 +1,140 @@
+[
+  {
+    "source": "aws_autoscaling_group.cross_subnet_asg",
+    "target": "aws_launch_template.asg_tpl",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_autoscaling_group.cross_subnet_asg",
+    "target": "aws_subnet.subnets[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_autoscaling_group.cross_subnet_asg",
+    "target": "aws_subnet.subnets[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_autoscaling_group.cross_subnet_asg",
+    "target": "aws_subnet.subnets[2]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_db_subnet_group.cross_subnet_dbsng",
+    "target": "aws_subnet.subnets[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_db_subnet_group.cross_subnet_dbsng",
+    "target": "aws_subnet.subnets[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_db_subnet_group.cross_subnet_dbsng",
+    "target": "aws_subnet.subnets[2]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_lb.cross_subnet_alb",
+    "target": "aws_security_group.lb_sg",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_lb.cross_subnet_alb",
+    "target": "aws_subnet.subnets[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_lb.cross_subnet_alb",
+    "target": "aws_subnet.subnets[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_lb.cross_subnet_alb",
+    "target": "aws_subnet.subnets[2]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_security_group.lb_sg",
+    "target": "aws_vpc.multi",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.subnets[0]",
+    "target": "aws_vpc.multi",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.subnets[1]",
+    "target": "aws_vpc.multi",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.subnets[2]",
+    "target": "aws_vpc.multi",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc_endpoint.s3_interface",
+    "target": "aws_security_group.lb_sg",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc_endpoint.s3_interface",
+    "target": "aws_subnet.subnets[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_vpc_endpoint.s3_interface",
+    "target": "aws_subnet.subnets[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_vpc_endpoint.s3_interface",
+    "target": "aws_subnet.subnets[2]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_vpc_endpoint.s3_interface",
+    "target": "aws_vpc.multi",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.multi",
+    "target": "aws_subnet.subnets[0]",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.multi",
+    "target": "aws_subnet.subnets[1]",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.multi",
+    "target": "aws_subnet.subnets[2]",
+    "type": "contains",
+    "knowledge": "inferred"
+  }
+]

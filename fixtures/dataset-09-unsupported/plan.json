@@ -1,0 +1,107 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.16.2",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_vpc.supported_vpc",
+          "mode": "managed",
+          "type": "aws_vpc",
+          "name": "supported_vpc",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "cidr_block": "10.90.0.0/16",
+            "tags": { "Name": "ds09-supported-vpc" }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "google_compute_instance.custom_gcp",
+          "mode": "managed",
+          "type": "google_compute_instance",
+          "name": "custom_gcp",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "name": "demo-gcp-instance",
+            "machine_type": "e2-medium",
+            "zone": "us-central1-a"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "azurerm_virtual_network.custom_azure",
+          "mode": "managed",
+          "type": "azurerm_virtual_network",
+          "name": "custom_azure",
+          "provider_name": "registry.terraform.io/hashicorp/azurerm",
+          "schema_version": 0,
+          "values": {
+            "name": "demo-azure-vnet",
+            "location": "eastus"
+          },
+          "sensitive_values": {}
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_vpc.supported_vpc",
+      "mode": "managed",
+      "type": "aws_vpc",
+      "name": "supported_vpc",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "before": null,
+        "after": {
+          "cidr_block": "10.90.0.0/16",
+          "tags": { "Name": "ds09-supported-vpc" }
+        },
+        "after_unknown": { "id": true },
+        "before_sensitive": false,
+        "after_sensitive": {}
+      }
+    },
+    {
+      "address": "google_compute_instance.custom_gcp",
+      "mode": "managed",
+      "type": "google_compute_instance",
+      "name": "custom_gcp",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": ["create"],
+        "before": null,
+        "after": {
+          "name": "demo-gcp-instance",
+          "machine_type": "e2-medium",
+          "zone": "us-central1-a"
+        },
+        "after_unknown": { "id": true },
+        "before_sensitive": false,
+        "after_sensitive": {}
+      }
+    },
+    {
+      "address": "azurerm_virtual_network.custom_azure",
+      "mode": "managed",
+      "type": "azurerm_virtual_network",
+      "name": "custom_azure",
+      "provider_name": "registry.terraform.io/hashicorp/azurerm",
+      "change": {
+        "actions": ["create"],
+        "before": null,
+        "after": {
+          "name": "demo-azure-vnet",
+          "location": "eastus"
+        },
+        "after_unknown": { "id": true },
+        "before_sensitive": false,
+        "after_sensitive": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,782 @@
+{
+  "schemaVersion": "1.0",
+  "source": {
+    "engine": "unknown",
+    "kind": "plan",
+    "terraformVersion": "1.16.2",
+    "formatVersion": "1.2"
+  },
+  "nodes": [
+    {
+      "id": "n_97bccb37c8a2aeb8a07d27050aede5113e13f9eb2c334707fc1a15dbf1c41fbc",
+      "address": "aws_autoscaling_group.cross_subnet_asg",
+      "provider": "aws",
+      "resourceType": "aws_autoscaling_group",
+      "resourceName": "cross_subnet_asg",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "desired_capacity": 2,
+        "launch_template": [
+          {
+            "version": "$Latest"
+          }
+        ],
+        "max_size": 4,
+        "min_size": 1,
+        "name": "multi-asg"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_autoscaling_group.cross_subnet_asg",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_autoscaling_group.cross_subnet_asg",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "availability_zone_distribution",
+        "availability_zones",
+        "capacity_reservation_specification",
+        "default_cooldown",
+        "health_check_type",
+        "id",
+        "launch_template.0.id",
+        "launch_template.0.name",
+        "load_balancers",
+        "mixed_instances_policy",
+        "name_prefix",
+        "predicted_capacity",
+        "service_linked_role_arn",
+        "target_group_arns",
+        "traffic_source",
+        "vpc_zone_identifier",
+        "warm_pool_size"
+      ]
+    },
+    {
+      "id": "n_eb4890441f7bedba8c83124adf74240c2883a072a8f1f9f2a013230092bb9e9e",
+      "address": "aws_db_subnet_group.cross_subnet_dbsng",
+      "provider": "aws",
+      "resourceType": "aws_db_subnet_group",
+      "resourceName": "cross_subnet_dbsng",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "name": "multi-dbsng"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_db_subnet_group.cross_subnet_dbsng",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_db_subnet_group.cross_subnet_dbsng",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "id",
+        "name_prefix",
+        "subnet_ids",
+        "supported_network_types",
+        "tags_all",
+        "vpc_id"
+      ]
+    },
+    {
+      "id": "n_2767ea0b03fe02cce24154fa16943b041c58d942fe449cf2fa4bf75d7471ff84",
+      "address": "aws_launch_template.asg_tpl",
+      "provider": "aws",
+      "resourceType": "aws_launch_template",
+      "resourceName": "asg_tpl",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "instance_type": "t3.micro"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_launch_template.asg_tpl",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_launch_template.asg_tpl",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "default_version",
+        "id",
+        "latest_version",
+        "metadata_options",
+        "name",
+        "tags_all"
+      ]
+    },
+    {
+      "id": "n_c1322b652602c7592e7a35dd67b01e7aa559e00a44561f6a1f78ed965f34988f",
+      "address": "aws_lb.cross_subnet_alb",
+      "provider": "aws",
+      "resourceType": "aws_lb",
+      "resourceName": "cross_subnet_alb",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "access_logs": [],
+        "internal": true,
+        "load_balancer_type": "application",
+        "name": "multi-alb"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_lb.cross_subnet_alb",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_lb.cross_subnet_alb",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "arn_suffix",
+        "dns_name",
+        "enforce_security_group_inbound_rules_on_private_link_traffic",
+        "id",
+        "ip_address_type",
+        "name_prefix",
+        "security_groups",
+        "subnet_mapping",
+        "subnets",
+        "tags_all",
+        "vpc_id",
+        "zone_id"
+      ]
+    },
+    {
+      "id": "n_57c54377a468c28280a2f9f87ac63fbb84fb3cc38429189a983b773eba0ccd8d",
+      "address": "aws_security_group.lb_sg",
+      "provider": "aws",
+      "resourceType": "aws_security_group",
+      "resourceName": "lb_sg",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "name": "multi-alb-sg"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_security_group.lb_sg",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_security_group.lb_sg",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "egress",
+        "id",
+        "ingress",
+        "name_prefix",
+        "owner_id",
+        "tags_all",
+        "vpc_id"
+      ]
+    },
+    {
+      "id": "n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "address": "aws_subnet.subnets[0]",
+      "provider": "aws",
+      "resourceType": "aws_subnet",
+      "resourceName": "subnets",
+      "mode": "managed",
+      "scope": {
+        "availabilityZones": [
+          "ap-northeast-1a"
+        ]
+      },
+      "attributes": {
+        "availability_zone": "ap-northeast-1a",
+        "cidr_block": "10.70.0.0/24",
+        "ipv6_cidr_block": null,
+        "tags": {
+          "Name": "multi-sub-0"
+        }
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_subnet.subnets[0]",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_subnet.subnets[0]",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "availability_zone_id",
+        "id",
+        "ipv6_cidr_block_association_id",
+        "owner_id",
+        "private_dns_hostname_type_on_launch",
+        "vpc_id"
+      ]
+    },
+    {
+      "id": "n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "address": "aws_subnet.subnets[1]",
+      "provider": "aws",
+      "resourceType": "aws_subnet",
+      "resourceName": "subnets",
+      "mode": "managed",
+      "scope": {
+        "availabilityZones": [
+          "ap-northeast-1c"
+        ]
+      },
+      "attributes": {
+        "availability_zone": "ap-northeast-1c",
+        "cidr_block": "10.70.1.0/24",
+        "ipv6_cidr_block": null,
+        "tags": {
+          "Name": "multi-sub-1"
+        }
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_subnet.subnets[1]",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_subnet.subnets[1]",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "availability_zone_id",
+        "id",
+        "ipv6_cidr_block_association_id",
+        "owner_id",
+        "private_dns_hostname_type_on_launch",
+        "vpc_id"
+      ]
+    },
+    {
+      "id": "n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "address": "aws_subnet.subnets[2]",
+      "provider": "aws",
+      "resourceType": "aws_subnet",
+      "resourceName": "subnets",
+      "mode": "managed",
+      "scope": {
+        "availabilityZones": [
+          "ap-northeast-1d"
+        ]
+      },
+      "attributes": {
+        "availability_zone": "ap-northeast-1d",
+        "cidr_block": "10.70.2.0/24",
+        "ipv6_cidr_block": null,
+        "tags": {
+          "Name": "multi-sub-2"
+        }
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_subnet.subnets[2]",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_subnet.subnets[2]",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "availability_zone_id",
+        "id",
+        "ipv6_cidr_block_association_id",
+        "owner_id",
+        "private_dns_hostname_type_on_launch",
+        "vpc_id"
+      ]
+    },
+    {
+      "id": "n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "address": "aws_vpc.multi",
+      "provider": "aws",
+      "resourceType": "aws_vpc",
+      "resourceName": "multi",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "cidr_block": "10.70.0.0/16",
+        "tags": {
+          "Name": "multi-vpc"
+        }
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_vpc.multi",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_vpc.multi",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "default_network_acl_id",
+        "default_route_table_id",
+        "default_security_group_id",
+        "dhcp_options_id",
+        "enable_network_address_usage_metrics",
+        "id",
+        "ipv6_association_id",
+        "ipv6_cidr_block",
+        "ipv6_cidr_block_network_border_group",
+        "main_route_table_id",
+        "owner_id"
+      ]
+    },
+    {
+      "id": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17",
+      "address": "aws_vpc_endpoint.s3_interface",
+      "provider": "aws",
+      "resourceType": "aws_vpc_endpoint",
+      "resourceName": "s3_interface",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {},
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_vpc_endpoint.s3_interface",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_vpc_endpoint.s3_interface",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "cidr_blocks",
+        "dns_entry",
+        "dns_options",
+        "id",
+        "ip_address_type",
+        "network_interface_ids",
+        "owner_id",
+        "policy",
+        "prefix_list_id",
+        "private_dns_enabled",
+        "requester_managed",
+        "route_table_ids",
+        "security_group_ids",
+        "service_region",
+        "state",
+        "subnet_configuration",
+        "subnet_ids",
+        "tags_all",
+        "vpc_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "n_97bccb37c8a2aeb8a07d27050aede5113e13f9eb2c334707fc1a15dbf1c41fbc-->references-->n_2767ea0b03fe02cce24154fa16943b041c58d942fe449cf2fa4bf75d7471ff84",
+      "source": "n_97bccb37c8a2aeb8a07d27050aede5113e13f9eb2c334707fc1a15dbf1c41fbc",
+      "target": "n_2767ea0b03fe02cce24154fa16943b041c58d942fe449cf2fa4bf75d7471ff84",
+      "type": "references",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_autoscaling_group.cross_subnet_asg",
+          "attributePath": "launch_template.id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_97bccb37c8a2aeb8a07d27050aede5113e13f9eb2c334707fc1a15dbf1c41fbc-->references-->n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "source": "n_97bccb37c8a2aeb8a07d27050aede5113e13f9eb2c334707fc1a15dbf1c41fbc",
+      "target": "n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_autoscaling_group.cross_subnet_asg",
+          "attributePath": "vpc_zone_identifier",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_97bccb37c8a2aeb8a07d27050aede5113e13f9eb2c334707fc1a15dbf1c41fbc-->references-->n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "source": "n_97bccb37c8a2aeb8a07d27050aede5113e13f9eb2c334707fc1a15dbf1c41fbc",
+      "target": "n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_autoscaling_group.cross_subnet_asg",
+          "attributePath": "vpc_zone_identifier",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_97bccb37c8a2aeb8a07d27050aede5113e13f9eb2c334707fc1a15dbf1c41fbc-->references-->n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "source": "n_97bccb37c8a2aeb8a07d27050aede5113e13f9eb2c334707fc1a15dbf1c41fbc",
+      "target": "n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_autoscaling_group.cross_subnet_asg",
+          "attributePath": "vpc_zone_identifier",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_eb4890441f7bedba8c83124adf74240c2883a072a8f1f9f2a013230092bb9e9e-->references-->n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "source": "n_eb4890441f7bedba8c83124adf74240c2883a072a8f1f9f2a013230092bb9e9e",
+      "target": "n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_db_subnet_group.cross_subnet_dbsng",
+          "attributePath": "subnet_ids",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_eb4890441f7bedba8c83124adf74240c2883a072a8f1f9f2a013230092bb9e9e-->references-->n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "source": "n_eb4890441f7bedba8c83124adf74240c2883a072a8f1f9f2a013230092bb9e9e",
+      "target": "n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_db_subnet_group.cross_subnet_dbsng",
+          "attributePath": "subnet_ids",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_eb4890441f7bedba8c83124adf74240c2883a072a8f1f9f2a013230092bb9e9e-->references-->n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "source": "n_eb4890441f7bedba8c83124adf74240c2883a072a8f1f9f2a013230092bb9e9e",
+      "target": "n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_db_subnet_group.cross_subnet_dbsng",
+          "attributePath": "subnet_ids",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_c1322b652602c7592e7a35dd67b01e7aa559e00a44561f6a1f78ed965f34988f-->associated_with-->n_57c54377a468c28280a2f9f87ac63fbb84fb3cc38429189a983b773eba0ccd8d",
+      "source": "n_c1322b652602c7592e7a35dd67b01e7aa559e00a44561f6a1f78ed965f34988f",
+      "target": "n_57c54377a468c28280a2f9f87ac63fbb84fb3cc38429189a983b773eba0ccd8d",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_lb.cross_subnet_alb",
+          "attributePath": "security_groups",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_c1322b652602c7592e7a35dd67b01e7aa559e00a44561f6a1f78ed965f34988f-->references-->n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "source": "n_c1322b652602c7592e7a35dd67b01e7aa559e00a44561f6a1f78ed965f34988f",
+      "target": "n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_lb.cross_subnet_alb",
+          "attributePath": "subnets",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_c1322b652602c7592e7a35dd67b01e7aa559e00a44561f6a1f78ed965f34988f-->references-->n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "source": "n_c1322b652602c7592e7a35dd67b01e7aa559e00a44561f6a1f78ed965f34988f",
+      "target": "n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_lb.cross_subnet_alb",
+          "attributePath": "subnets",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_c1322b652602c7592e7a35dd67b01e7aa559e00a44561f6a1f78ed965f34988f-->references-->n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "source": "n_c1322b652602c7592e7a35dd67b01e7aa559e00a44561f6a1f78ed965f34988f",
+      "target": "n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_lb.cross_subnet_alb",
+          "attributePath": "subnets",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_57c54377a468c28280a2f9f87ac63fbb84fb3cc38429189a983b773eba0ccd8d-->associated_with-->n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "source": "n_57c54377a468c28280a2f9f87ac63fbb84fb3cc38429189a983b773eba0ccd8d",
+      "target": "n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_security_group.lb_sg",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202-->associated_with-->n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "source": "n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "target": "n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_subnet.subnets[0]",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a-->associated_with-->n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "source": "n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "target": "n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_subnet.subnets[1]",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb-->associated_with-->n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "source": "n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "target": "n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_subnet.subnets[2]",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17-->references-->n_57c54377a468c28280a2f9f87ac63fbb84fb3cc38429189a983b773eba0ccd8d",
+      "source": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17",
+      "target": "n_57c54377a468c28280a2f9f87ac63fbb84fb3cc38429189a983b773eba0ccd8d",
+      "type": "references",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_vpc_endpoint.s3_interface",
+          "attributePath": "security_group_ids",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17-->references-->n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "source": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17",
+      "target": "n_8f6dc5447e69bbc1c589ef211e685be9f654146a65950b8554b220abd7ae7202",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_vpc_endpoint.s3_interface",
+          "attributePath": "subnet_ids",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17-->references-->n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "source": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17",
+      "target": "n_7ea1a2eb8d40ee3bebda8cdc8855e627f5417eaff8518ca62bac7b3f66bf0f8a",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_vpc_endpoint.s3_interface",
+          "attributePath": "subnet_ids",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17-->references-->n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "source": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17",
+      "target": "n_a0f04fe88de06245c0e667fd7ea1c071aa75a8e5efc349268d964975a52d22cb",
+      "type": "references",
+      "knowledge": "unknown",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_vpc_endpoint.s3_interface",
+          "attributePath": "subnet_ids",
+          "description": "Resource collection reference; instance mapping is unresolved. This is not a binding."
+        }
+      ]
+    },
+    {
+      "id": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17-->associated_with-->n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "source": "n_1feea43aabb5c919abd78c9c859b7896960f410733db7d8f04c5f76ae49d5b17",
+      "target": "n_13139fdde2be5822b22c0a5ce3c35bfd34ae6fd22140347c7e8c50756985fea8",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "aws_vpc_endpoint.s3_interface",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Plan contains output_changes; only resource architecture is rendered.",
+    "Ambiguous configuration resource reference; instance binding remains unresolved."
+  ]
+}

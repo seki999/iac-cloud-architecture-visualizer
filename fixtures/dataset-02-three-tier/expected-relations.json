@@ -1,0 +1,452 @@
+[
+  {
+    "source": "aws_db_instance.main",
+    "target": "aws_db_subnet_group.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_db_instance.main",
+    "target": "aws_security_group.db",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_db_subnet_group.main",
+    "target": "aws_subnet.db[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_db_subnet_group.main",
+    "target": "aws_subnet.db[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_ecs_service.app",
+    "target": "aws_lb_listener.http",
+    "type": "depends_on",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.app",
+    "target": "aws_ecs_cluster.main",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_ecs_service.app",
+    "target": "aws_lb_target_group.app",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_ecs_service.app",
+    "target": "aws_security_group.app",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_ecs_service.app",
+    "target": "aws_subnet.app[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_ecs_service.app",
+    "target": "aws_subnet.app[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_ecs_service.app",
+    "target": "aws_ecs_task_definition.app",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_internet_gateway.igw",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_lb.web",
+    "target": "aws_s3_bucket.alb_logs",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_lb.web",
+    "target": "aws_security_group.alb",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_lb.web",
+    "target": "aws_subnet.public[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_lb.web",
+    "target": "aws_subnet.public[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_lb_listener.http",
+    "target": "aws_lb_target_group.app",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_lb_listener.http",
+    "target": "aws_lb.web",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_lb_target_group.app",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_nat_gateway.nat",
+    "target": "aws_eip.nat",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_nat_gateway.nat",
+    "target": "aws_subnet.public[0]",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table.app",
+    "target": "aws_nat_gateway.nat",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table.app",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table.db",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table.public",
+    "target": "aws_internet_gateway.igw",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table.public",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.app[0]",
+    "target": "aws_route_table.app",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.app[0]",
+    "target": "aws_subnet.app[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.app[0]",
+    "target": "aws_subnet.app[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.app[1]",
+    "target": "aws_route_table.app",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.app[1]",
+    "target": "aws_subnet.app[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.app[1]",
+    "target": "aws_subnet.app[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.db[0]",
+    "target": "aws_route_table.db",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.db[0]",
+    "target": "aws_subnet.db[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.db[0]",
+    "target": "aws_subnet.db[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.db[1]",
+    "target": "aws_route_table.db",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.db[1]",
+    "target": "aws_subnet.db[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.db[1]",
+    "target": "aws_subnet.db[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.public[0]",
+    "target": "aws_route_table.public",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.public[0]",
+    "target": "aws_subnet.public[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.public[0]",
+    "target": "aws_subnet.public[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.public[1]",
+    "target": "aws_route_table.public",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.public[1]",
+    "target": "aws_subnet.public[0]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_route_table_association.public[1]",
+    "target": "aws_subnet.public[1]",
+    "type": "references",
+    "knowledge": "unknown"
+  },
+  {
+    "source": "aws_security_group.alb",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_security_group.app",
+    "target": "aws_security_group.alb",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_security_group.app",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_security_group.db",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.app[0]",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.app[1]",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.db[0]",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.db[1]",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.public[0]",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.public[1]",
+    "target": "aws_vpc.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc_security_group_ingress_rule.db_from_app",
+    "target": "aws_security_group.app",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc_security_group_ingress_rule.db_from_app",
+    "target": "aws_security_group.db",
+    "type": "references",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_ecs_service.app",
+    "target": "aws_ecs_cluster.main",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_lb_target_group.app",
+    "target": "aws_ecs_service.app",
+    "type": "targets",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_internet_gateway.igw",
+    "target": "aws_vpc.main",
+    "type": "attached_to",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table.app",
+    "target": "aws_nat_gateway.nat",
+    "type": "routes_to",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table.public",
+    "target": "aws_internet_gateway.igw",
+    "type": "routes_to",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.app[0]",
+    "target": "aws_route_table.app",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.app[1]",
+    "target": "aws_route_table.app",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.db[0]",
+    "target": "aws_route_table.db",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.db[1]",
+    "target": "aws_route_table.db",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.public[0]",
+    "target": "aws_route_table.public",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_route_table_association.public[1]",
+    "target": "aws_route_table.public",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.main",
+    "target": "aws_subnet.app[0]",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.main",
+    "target": "aws_subnet.app[1]",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.main",
+    "target": "aws_subnet.db[0]",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.main",
+    "target": "aws_subnet.db[1]",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.main",
+    "target": "aws_subnet.public[0]",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.main",
+    "target": "aws_subnet.public[1]",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc_security_group_ingress_rule.db_from_app",
+    "target": "aws_security_group.db",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_lb.web",
+    "target": "aws_lb_target_group.app",
+    "type": "targets",
+    "knowledge": "inferred"
+  }
+]

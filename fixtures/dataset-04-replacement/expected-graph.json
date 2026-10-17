@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0",
+  "source": {
+    "engine": "unknown",
+    "kind": "plan",
+    "terraformVersion": "1.16.2",
+    "formatVersion": "1.2"
+  },
+  "nodes": [
+    {
+      "id": "n_60c766827c79af0544b43726a3c5d7f745e1fc9f9bbad880229a0b2d291bfe70",
+      "address": "terraform_data.create_before_destroy_replacement",
+      "provider": "terraform",
+      "resourceType": "terraform_data",
+      "resourceName": "create_before_destroy_replacement",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {},
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create",
+          "delete"
+        ],
+        "actionReason": "replace_because_cannot_update",
+        "replacePaths": [
+          [
+            "triggers_replace"
+          ]
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "terraform_data.create_before_destroy_replacement",
+          "description": "Planned actions: create, delete"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "terraform_data.create_before_destroy_replacement",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "id",
+        "output"
+      ],
+      "unresolvedReferencePaths": [
+        "input",
+        "triggers_replace"
+      ]
+    },
+    {
+      "id": "n_a6dd978f8df327f03d3b70c5b1cc44ae41cd3df00837100a01917c2d7f5e8e58",
+      "address": "terraform_data.stable",
+      "provider": "terraform",
+      "resourceType": "terraform_data",
+      "resourceName": "stable",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "id": "18400ef8-8fb7-6284-dc4c-cb8624efa022"
+      },
+      "knowledge": "known",
+      "change": {
+        "actions": [
+          "no-op"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "terraform_data.stable",
+          "description": "Planned actions: no-op"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "terraform_data.stable",
+          "description": "Resource present in planned_values"
+        }
+      ]
+    },
+    {
+      "id": "n_f4d8223cf5d978599f93725e01207c3907afa282a39924f25142cf0e35bc8870",
+      "address": "terraform_data.standard_replacement",
+      "provider": "terraform",
+      "resourceType": "terraform_data",
+      "resourceName": "standard_replacement",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {},
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "delete",
+          "create"
+        ],
+        "actionReason": "replace_because_cannot_update",
+        "replacePaths": [
+          [
+            "triggers_replace"
+          ]
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "terraform_data.standard_replacement",
+          "description": "Planned actions: delete, create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "terraform_data.standard_replacement",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "id",
+        "output"
+      ],
+      "unresolvedReferencePaths": [
+        "input",
+        "triggers_replace"
+      ]
+    }
+  ],
+  "edges": [],
+  "warnings": [
+    "Plan contains output_changes; only resource architecture is rendered."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "format_version": "1.0",
+  "terraform_version": "1.16.2",
+  "values": {
+    "outputs": {
+      "cbd_id": {
+        "sensitive": false,
+        "value": "b5e5b5b3-7957-6d16-d9a1-3ba39fcf2552",
+        "type": "string"
+      },
+      "standard_id": {
+        "sensitive": false,
+        "value": "34ec5c11-58e8-3fb4-7f41-4da4c6a40ce9",
+        "type": "string"
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "terraform_data.create_before_destroy_replacement",
+          "mode": "managed",
+          "type": "terraform_data",
+          "name": "create_before_destroy_replacement",
+          "provider_name": "terraform.io/builtin/terraform",
+          "schema_version": 0,
+          "values": {
+            "id": "b5e5b5b3-7957-6d16-d9a1-3ba39fcf2552",
+            "input": "cbd-payload-v1",
+            "output": "cbd-payload-v1",
+            "store": null,
+            "triggers_replace": [
+              1
+            ]
+          },
+          "sensitive_values": {
+            "triggers_replace": [
+              false
+            ]
+          }
+        },
+        {
+          "address": "terraform_data.stable",
+          "mode": "managed",
+          "type": "terraform_data",
+          "name": "stable",
+          "provider_name": "terraform.io/builtin/terraform",
+          "schema_version": 0,
+          "values": {
+            "id": "18400ef8-8fb7-6284-dc4c-cb8624efa022",
+            "input": "constant-data",
+            "output": "constant-data",
+            "store": null,
+            "triggers_replace": null
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "terraform_data.standard_replacement",
+          "mode": "managed",
+          "type": "terraform_data",
+          "name": "standard_replacement",
+          "provider_name": "terraform.io/builtin/terraform",
+          "schema_version": 0,
+          "values": {
+            "id": "34ec5c11-58e8-3fb4-7f41-4da4c6a40ce9",
+            "input": "standard-payload-v1",
+            "output": "standard-payload-v1",
+            "store": null,
+            "triggers_replace": [
+              1
+            ]
+          },
+          "sensitive_values": {
+            "triggers_replace": [
+              false
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "dataset": "dataset-01-network",
+    "before": 57,
+    "after": 53,
+    "added": [],
+    "removed": [
+      {
+        "source": "aws_instance.bastion",
+        "target": "aws_subnet.public[0]",
+        "type": "references",
+        "knowledge": "unknown"
+      },
+      {
+        "source": "aws_instance.bastion",
+        "target": "aws_subnet.public[1]",
+        "type": "references",
+        "knowledge": "unknown"
+      },
+      {
+        "source": "aws_nat_gateway.main",
+        "target": "aws_subnet.public[0]",
+        "type": "references",
+        "knowledge": "unknown"
+      },
+      {
+        "source": "aws_nat_gateway.main",
+        "target": "aws_subnet.public[1]",
+        "type": "references",
+        "knowledge": "unknown"
+      }
+    ]
+  },
+  {
+    "dataset": "dataset-02-three-tier",
+    "before": 77,
+    "after": 75,
+    "added": [],
+    "removed": [
+      {
+        "source": "aws_nat_gateway.nat",
+        "target": "aws_subnet.public[0]",
+        "type": "references",
+        "knowledge": "unknown"
+      },
+      {
+        "source": "aws_nat_gateway.nat",
+        "target": "aws_subnet.public[1]",
+        "type": "references",
+        "knowledge": "unknown"
+      }
+    ]
+  },
+  {
+    "dataset": "dataset-03-unknown",
+    "before": 7,
+    "after": 7,
+    "added": [],
+    "removed": []
+  },
+  {
+    "dataset": "dataset-04-replacement",
+    "before": 0,
+    "after": 0,
+    "added": [],
+    "removed": []
+  },
+  {
+    "dataset": "dataset-05-sensitive",
+    "before": 4,
+    "after": 4,
+    "added": [],
+    "removed": []
+  },
+  {
+    "dataset": "dataset-06-modules",
+    "before": 10,
+    "after": 10,
+    "added": [],
+    "removed": []
+  },
+  {
+    "dataset": "dataset-07-multi-subnet",
+    "before": 23,
+    "after": 23,
+    "added": [],
+    "removed": []
+  },
+  {
+    "dataset": "dataset-08-large",
+    "before": 354,
+    "after": 354,
+    "added": [],
+    "removed": []
+  },
+  {
+    "dataset": "dataset-09-unsupported",
+    "before": 0,
+    "after": 0,
+    "added": [],
+    "removed": []
+  }
+]

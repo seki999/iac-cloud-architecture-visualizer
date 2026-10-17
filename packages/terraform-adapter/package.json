@@ -1,0 +1,20 @@
+{
+  "name": "@iacviz/terraform-adapter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Terraform show -json (state/plan) adapter producing InfraGraph",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --root ../.. packages/terraform-adapter"
+  },
+  "dependencies": {
+    "@iacviz/core": "workspace:*",
+    "@iacviz/schemas": "workspace:*"
+  }
+}

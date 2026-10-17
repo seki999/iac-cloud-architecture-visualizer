@@ -1,0 +1,4070 @@
+{
+  "format_version": "1.0",
+  "terraform_version": "1.16.2",
+  "values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_vpc.vpc_0",
+          "mode": "managed",
+          "type": "aws_vpc",
+          "name": "vpc_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_vpc-vpc_0-id",
+            "tags": {
+              "Name": "vpc_0"
+            },
+            "cidr_block": "10.100.0.0/16",
+            "enable_dns_hostnames": true
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_vpc.vpc_1",
+          "mode": "managed",
+          "type": "aws_vpc",
+          "name": "vpc_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_vpc-vpc_1-id",
+            "tags": {
+              "Name": "vpc_1"
+            },
+            "cidr_block": "10.101.0.0/16",
+            "enable_dns_hostnames": true
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_subnet.subnet_v0_s0",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "subnet_v0_s0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_subnet-subnet_v0_s0-id",
+            "tags": {
+              "Name": "subnet_v0_s0"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "cidr_block": "10.100.0.0/24",
+            "availability_zone": "ap-northeast-1a"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_subnet.subnet_v0_s1",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "subnet_v0_s1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_subnet-subnet_v0_s1-id",
+            "tags": {
+              "Name": "subnet_v0_s1"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "cidr_block": "10.100.1.0/24",
+            "availability_zone": "ap-northeast-1c"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_subnet.subnet_v0_s2",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "subnet_v0_s2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_subnet-subnet_v0_s2-id",
+            "tags": {
+              "Name": "subnet_v0_s2"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "cidr_block": "10.100.2.0/24",
+            "availability_zone": "ap-northeast-1a"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_subnet.subnet_v0_s3",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "subnet_v0_s3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_subnet-subnet_v0_s3-id",
+            "tags": {
+              "Name": "subnet_v0_s3"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "cidr_block": "10.100.3.0/24",
+            "availability_zone": "ap-northeast-1c"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_subnet.subnet_v1_s0",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "subnet_v1_s0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_subnet-subnet_v1_s0-id",
+            "tags": {
+              "Name": "subnet_v1_s0"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "cidr_block": "10.101.0.0/24",
+            "availability_zone": "ap-northeast-1a"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_subnet.subnet_v1_s1",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "subnet_v1_s1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_subnet-subnet_v1_s1-id",
+            "tags": {
+              "Name": "subnet_v1_s1"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "cidr_block": "10.101.1.0/24",
+            "availability_zone": "ap-northeast-1c"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_subnet.subnet_v1_s2",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "subnet_v1_s2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_subnet-subnet_v1_s2-id",
+            "tags": {
+              "Name": "subnet_v1_s2"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "cidr_block": "10.101.2.0/24",
+            "availability_zone": "ap-northeast-1a"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_subnet.subnet_v1_s3",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "subnet_v1_s3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_subnet-subnet_v1_s3-id",
+            "tags": {
+              "Name": "subnet_v1_s3"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "cidr_block": "10.101.3.0/24",
+            "availability_zone": "ap-northeast-1c"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_internet_gateway.igw_v0",
+          "mode": "managed",
+          "type": "aws_internet_gateway",
+          "name": "igw_v0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_internet_gateway-igw_v0-id",
+            "tags": {
+              "Name": "igw_v0"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_internet_gateway.igw_v1",
+          "mode": "managed",
+          "type": "aws_internet_gateway",
+          "name": "igw_v1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_internet_gateway-igw_v1-id",
+            "tags": {
+              "Name": "igw_v1"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_nat_gateway.nat_v0",
+          "mode": "managed",
+          "type": "aws_nat_gateway",
+          "name": "nat_v0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_nat_gateway-nat_v0-id",
+            "tags": {
+              "Name": "nat_v0"
+            },
+            "subnet_id": "aws_subnet-subnet_v0_s0-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_nat_gateway.nat_v1",
+          "mode": "managed",
+          "type": "aws_nat_gateway",
+          "name": "nat_v1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_nat_gateway-nat_v1-id",
+            "tags": {
+              "Name": "nat_v1"
+            },
+            "subnet_id": "aws_subnet-subnet_v1_s0-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table.rt_pub_v0",
+          "mode": "managed",
+          "type": "aws_route_table",
+          "name": "rt_pub_v0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table-rt_pub_v0-id",
+            "tags": {
+              "Name": "rt_pub_v0"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table.rt_priv_v0",
+          "mode": "managed",
+          "type": "aws_route_table",
+          "name": "rt_priv_v0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table-rt_priv_v0-id",
+            "tags": {
+              "Name": "rt_priv_v0"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table.rt_pub_v1",
+          "mode": "managed",
+          "type": "aws_route_table",
+          "name": "rt_pub_v1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table-rt_pub_v1-id",
+            "tags": {
+              "Name": "rt_pub_v1"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table.rt_priv_v1",
+          "mode": "managed",
+          "type": "aws_route_table",
+          "name": "rt_priv_v1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table-rt_priv_v1-id",
+            "tags": {
+              "Name": "rt_priv_v1"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table_association.rta_v0_s0",
+          "mode": "managed",
+          "type": "aws_route_table_association",
+          "name": "rta_v0_s0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table_association-rta_v0_s0-id",
+            "tags": {
+              "Name": "rta_v0_s0"
+            },
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "route_table_id": "aws_route_table-rt_pub_v0-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table_association.rta_v0_s1",
+          "mode": "managed",
+          "type": "aws_route_table_association",
+          "name": "rta_v0_s1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table_association-rta_v0_s1-id",
+            "tags": {
+              "Name": "rta_v0_s1"
+            },
+            "subnet_id": "aws_subnet-subnet_v0_s1-id",
+            "route_table_id": "aws_route_table-rt_pub_v0-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table_association.rta_v0_s2",
+          "mode": "managed",
+          "type": "aws_route_table_association",
+          "name": "rta_v0_s2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table_association-rta_v0_s2-id",
+            "tags": {
+              "Name": "rta_v0_s2"
+            },
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "route_table_id": "aws_route_table-rt_priv_v0-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table_association.rta_v0_s3",
+          "mode": "managed",
+          "type": "aws_route_table_association",
+          "name": "rta_v0_s3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table_association-rta_v0_s3-id",
+            "tags": {
+              "Name": "rta_v0_s3"
+            },
+            "subnet_id": "aws_subnet-subnet_v0_s3-id",
+            "route_table_id": "aws_route_table-rt_priv_v0-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table_association.rta_v1_s0",
+          "mode": "managed",
+          "type": "aws_route_table_association",
+          "name": "rta_v1_s0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table_association-rta_v1_s0-id",
+            "tags": {
+              "Name": "rta_v1_s0"
+            },
+            "subnet_id": "aws_subnet-subnet_v1_s0-id",
+            "route_table_id": "aws_route_table-rt_pub_v1-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table_association.rta_v1_s1",
+          "mode": "managed",
+          "type": "aws_route_table_association",
+          "name": "rta_v1_s1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table_association-rta_v1_s1-id",
+            "tags": {
+              "Name": "rta_v1_s1"
+            },
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "route_table_id": "aws_route_table-rt_pub_v1-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table_association.rta_v1_s2",
+          "mode": "managed",
+          "type": "aws_route_table_association",
+          "name": "rta_v1_s2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table_association-rta_v1_s2-id",
+            "tags": {
+              "Name": "rta_v1_s2"
+            },
+            "subnet_id": "aws_subnet-subnet_v1_s2-id",
+            "route_table_id": "aws_route_table-rt_priv_v1-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_route_table_association.rta_v1_s3",
+          "mode": "managed",
+          "type": "aws_route_table_association",
+          "name": "rta_v1_s3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_route_table_association-rta_v1_s3-id",
+            "tags": {
+              "Name": "rta_v1_s3"
+            },
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "route_table_id": "aws_route_table-rt_priv_v1-id"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_0",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_0-id",
+            "tags": {
+              "Name": "sg_0"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 0"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_1",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_1-id",
+            "tags": {
+              "Name": "sg_1"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 1"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_2",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_2-id",
+            "tags": {
+              "Name": "sg_2"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 2"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_3",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_3-id",
+            "tags": {
+              "Name": "sg_3"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 3"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_4",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_4-id",
+            "tags": {
+              "Name": "sg_4"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 4"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_5",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_5-id",
+            "tags": {
+              "Name": "sg_5"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 5"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_6",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_6-id",
+            "tags": {
+              "Name": "sg_6"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 6"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_7",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_7-id",
+            "tags": {
+              "Name": "sg_7"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 7"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_8",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_8-id",
+            "tags": {
+              "Name": "sg_8"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 8"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_9",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_9-id",
+            "tags": {
+              "Name": "sg_9"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 9"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_10",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_10",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_10-id",
+            "tags": {
+              "Name": "sg_10"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 10"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_11",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_11",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_11-id",
+            "tags": {
+              "Name": "sg_11"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 11"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_12",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_12",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_12-id",
+            "tags": {
+              "Name": "sg_12"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 12"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_13",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_13",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_13-id",
+            "tags": {
+              "Name": "sg_13"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 13"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_14",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_14",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_14-id",
+            "tags": {
+              "Name": "sg_14"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 14"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_15",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_15",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_15-id",
+            "tags": {
+              "Name": "sg_15"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 15"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_16",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_16",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_16-id",
+            "tags": {
+              "Name": "sg_16"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 16"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_17",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_17",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_17-id",
+            "tags": {
+              "Name": "sg_17"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 17"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_18",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_18",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_18-id",
+            "tags": {
+              "Name": "sg_18"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 18"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_19",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_19",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_19-id",
+            "tags": {
+              "Name": "sg_19"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 19"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_20",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_20",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_20-id",
+            "tags": {
+              "Name": "sg_20"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 20"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_21",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_21",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_21-id",
+            "tags": {
+              "Name": "sg_21"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 21"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_22",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_22",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_22-id",
+            "tags": {
+              "Name": "sg_22"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 22"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_23",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_23",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_23-id",
+            "tags": {
+              "Name": "sg_23"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 23"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_24",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_24",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_24-id",
+            "tags": {
+              "Name": "sg_24"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 24"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_25",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_25",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_25-id",
+            "tags": {
+              "Name": "sg_25"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 25"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_26",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_26",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_26-id",
+            "tags": {
+              "Name": "sg_26"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 26"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_27",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_27",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_27-id",
+            "tags": {
+              "Name": "sg_27"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 27"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_28",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_28",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_28-id",
+            "tags": {
+              "Name": "sg_28"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "description": "Security group 28"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_security_group.sg_29",
+          "mode": "managed",
+          "type": "aws_security_group",
+          "name": "sg_29",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_security_group-sg_29-id",
+            "tags": {
+              "Name": "sg_29"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "description": "Security group 29"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_0",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_0-id",
+            "tags": {
+              "Name": "app_vm_0"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_0-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_1",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_1-id",
+            "tags": {
+              "Name": "app_vm_1"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_1-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_2",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_2-id",
+            "tags": {
+              "Name": "app_vm_2"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_2-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_3",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_3-id",
+            "tags": {
+              "Name": "app_vm_3"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_3-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_4",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_4-id",
+            "tags": {
+              "Name": "app_vm_4"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_4-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_5",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_5-id",
+            "tags": {
+              "Name": "app_vm_5"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_5-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_6",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_6-id",
+            "tags": {
+              "Name": "app_vm_6"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_6-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_7",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_7-id",
+            "tags": {
+              "Name": "app_vm_7"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_7-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_8",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_8-id",
+            "tags": {
+              "Name": "app_vm_8"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_8-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_9",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_9-id",
+            "tags": {
+              "Name": "app_vm_9"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_9-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_10",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_10",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_10-id",
+            "tags": {
+              "Name": "app_vm_10"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_10-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_11",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_11",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_11-id",
+            "tags": {
+              "Name": "app_vm_11"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_11-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_12",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_12",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_12-id",
+            "tags": {
+              "Name": "app_vm_12"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_12-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_13",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_13",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_13-id",
+            "tags": {
+              "Name": "app_vm_13"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_13-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_14",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_14",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_14-id",
+            "tags": {
+              "Name": "app_vm_14"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_14-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_15",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_15",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_15-id",
+            "tags": {
+              "Name": "app_vm_15"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_15-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_16",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_16",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_16-id",
+            "tags": {
+              "Name": "app_vm_16"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_16-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_17",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_17",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_17-id",
+            "tags": {
+              "Name": "app_vm_17"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_17-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_18",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_18",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_18-id",
+            "tags": {
+              "Name": "app_vm_18"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_18-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_19",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_19",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_19-id",
+            "tags": {
+              "Name": "app_vm_19"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_19-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_20",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_20",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_20-id",
+            "tags": {
+              "Name": "app_vm_20"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_20-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_21",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_21",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_21-id",
+            "tags": {
+              "Name": "app_vm_21"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_21-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_22",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_22",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_22-id",
+            "tags": {
+              "Name": "app_vm_22"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_22-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_23",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_23",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_23-id",
+            "tags": {
+              "Name": "app_vm_23"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_23-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_24",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_24",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_24-id",
+            "tags": {
+              "Name": "app_vm_24"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_24-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_25",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_25",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_25-id",
+            "tags": {
+              "Name": "app_vm_25"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_25-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_26",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_26",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_26-id",
+            "tags": {
+              "Name": "app_vm_26"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_26-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_27",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_27",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_27-id",
+            "tags": {
+              "Name": "app_vm_27"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_27-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_28",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_28",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_28-id",
+            "tags": {
+              "Name": "app_vm_28"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_28-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_29",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_29",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_29-id",
+            "tags": {
+              "Name": "app_vm_29"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_29-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_30",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_30",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_30-id",
+            "tags": {
+              "Name": "app_vm_30"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_0-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_31",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_31",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_31-id",
+            "tags": {
+              "Name": "app_vm_31"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_1-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_32",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_32",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_32-id",
+            "tags": {
+              "Name": "app_vm_32"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s0-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_2-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_33",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_33",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_33-id",
+            "tags": {
+              "Name": "app_vm_33"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s1-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_3-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_34",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_34",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_34-id",
+            "tags": {
+              "Name": "app_vm_34"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v0_s2-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_4-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_instance.app_vm_35",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "app_vm_35",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_instance-app_vm_35-id",
+            "tags": {
+              "Name": "app_vm_35"
+            },
+            "ami": "ami-0123456789abcdef0",
+            "instance_type": "t3.micro",
+            "subnet_id": "aws_subnet-subnet_v1_s3-id",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_5-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_0",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_0-id",
+            "tags": {
+              "Name": "data_bucket_0"
+            },
+            "bucket": "benchmark-bucket-0"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_1",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_1-id",
+            "tags": {
+              "Name": "data_bucket_1"
+            },
+            "bucket": "benchmark-bucket-1"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_2",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_2-id",
+            "tags": {
+              "Name": "data_bucket_2"
+            },
+            "bucket": "benchmark-bucket-2"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_3",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_3-id",
+            "tags": {
+              "Name": "data_bucket_3"
+            },
+            "bucket": "benchmark-bucket-3"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_4",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_4-id",
+            "tags": {
+              "Name": "data_bucket_4"
+            },
+            "bucket": "benchmark-bucket-4"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_5",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_5-id",
+            "tags": {
+              "Name": "data_bucket_5"
+            },
+            "bucket": "benchmark-bucket-5"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_6",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_6-id",
+            "tags": {
+              "Name": "data_bucket_6"
+            },
+            "bucket": "benchmark-bucket-6"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_7",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_7-id",
+            "tags": {
+              "Name": "data_bucket_7"
+            },
+            "bucket": "benchmark-bucket-7"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_8",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_8-id",
+            "tags": {
+              "Name": "data_bucket_8"
+            },
+            "bucket": "benchmark-bucket-8"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_9",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_9-id",
+            "tags": {
+              "Name": "data_bucket_9"
+            },
+            "bucket": "benchmark-bucket-9"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_10",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_10",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_10-id",
+            "tags": {
+              "Name": "data_bucket_10"
+            },
+            "bucket": "benchmark-bucket-10"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_11",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_11",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_11-id",
+            "tags": {
+              "Name": "data_bucket_11"
+            },
+            "bucket": "benchmark-bucket-11"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_12",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_12",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_12-id",
+            "tags": {
+              "Name": "data_bucket_12"
+            },
+            "bucket": "benchmark-bucket-12"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_13",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_13",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_13-id",
+            "tags": {
+              "Name": "data_bucket_13"
+            },
+            "bucket": "benchmark-bucket-13"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_14",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_14",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_14-id",
+            "tags": {
+              "Name": "data_bucket_14"
+            },
+            "bucket": "benchmark-bucket-14"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_15",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_15",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_15-id",
+            "tags": {
+              "Name": "data_bucket_15"
+            },
+            "bucket": "benchmark-bucket-15"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_16",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_16",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_16-id",
+            "tags": {
+              "Name": "data_bucket_16"
+            },
+            "bucket": "benchmark-bucket-16"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_17",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_17",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_17-id",
+            "tags": {
+              "Name": "data_bucket_17"
+            },
+            "bucket": "benchmark-bucket-17"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_18",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_18",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_18-id",
+            "tags": {
+              "Name": "data_bucket_18"
+            },
+            "bucket": "benchmark-bucket-18"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_s3_bucket.data_bucket_19",
+          "mode": "managed",
+          "type": "aws_s3_bucket",
+          "name": "data_bucket_19",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_s3_bucket-data_bucket_19-id",
+            "tags": {
+              "Name": "data_bucket_19"
+            },
+            "bucket": "benchmark-bucket-19"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_0",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_0-id",
+            "tags": {
+              "Name": "dbsng_0"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "name": "dbsng_0"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_1",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_1-id",
+            "tags": {
+              "Name": "dbsng_1"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "name": "dbsng_1"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_2",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_2-id",
+            "tags": {
+              "Name": "dbsng_2"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "name": "dbsng_2"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_3",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_3-id",
+            "tags": {
+              "Name": "dbsng_3"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "name": "dbsng_3"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_4",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_4-id",
+            "tags": {
+              "Name": "dbsng_4"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "name": "dbsng_4"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_5",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_5-id",
+            "tags": {
+              "Name": "dbsng_5"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "name": "dbsng_5"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_6",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_6-id",
+            "tags": {
+              "Name": "dbsng_6"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "name": "dbsng_6"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_7",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_7-id",
+            "tags": {
+              "Name": "dbsng_7"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "name": "dbsng_7"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_8",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_8-id",
+            "tags": {
+              "Name": "dbsng_8"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "name": "dbsng_8"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_subnet_group.dbsng_9",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "dbsng_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_subnet_group-dbsng_9-id",
+            "tags": {
+              "Name": "dbsng_9"
+            },
+            "subnet_ids": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "name": "dbsng_9"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_0",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_0-id",
+            "tags": {
+              "Name": "rds_0"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_0",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_0-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_1",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_1-id",
+            "tags": {
+              "Name": "rds_1"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_1",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_1-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_2",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_2-id",
+            "tags": {
+              "Name": "rds_2"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_2",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_2-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_3",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_3-id",
+            "tags": {
+              "Name": "rds_3"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_3",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_3-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_4",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_4-id",
+            "tags": {
+              "Name": "rds_4"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_4",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_4-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_5",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_5-id",
+            "tags": {
+              "Name": "rds_5"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_5",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_5-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_6",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_6-id",
+            "tags": {
+              "Name": "rds_6"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_6",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_6-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_7",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_7-id",
+            "tags": {
+              "Name": "rds_7"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_7",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_7-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_8",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_8-id",
+            "tags": {
+              "Name": "rds_8"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_8",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_8-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_db_instance.rds_9",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "rds_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_db_instance-rds_9-id",
+            "tags": {
+              "Name": "rds_9"
+            },
+            "engine": "postgres",
+            "instance_class": "db.t4g.micro",
+            "db_subnet_group_name": "dbsng_9",
+            "vpc_security_group_ids": [
+              "aws_security_group-sg_9-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_0",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_0-id",
+            "tags": {
+              "Name": "alb_0"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_0-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_1",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_1-id",
+            "tags": {
+              "Name": "alb_1"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_1-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_2",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_2-id",
+            "tags": {
+              "Name": "alb_2"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_2-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_3",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_3-id",
+            "tags": {
+              "Name": "alb_3"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_3-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_4",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_4-id",
+            "tags": {
+              "Name": "alb_4"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_4-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_5",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_5-id",
+            "tags": {
+              "Name": "alb_5"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_5-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_6",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_6-id",
+            "tags": {
+              "Name": "alb_6"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_6-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_7",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_7-id",
+            "tags": {
+              "Name": "alb_7"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_7-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_8",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_8-id",
+            "tags": {
+              "Name": "alb_8"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v0_s0-id",
+              "aws_subnet-subnet_v0_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_8-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb.alb_9",
+          "mode": "managed",
+          "type": "aws_lb",
+          "name": "alb_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb-alb_9-id",
+            "tags": {
+              "Name": "alb_9"
+            },
+            "load_balancer_type": "application",
+            "subnets": [
+              "aws_subnet-subnet_v1_s0-id",
+              "aws_subnet-subnet_v1_s1-id"
+            ],
+            "security_groups": [
+              "aws_security_group-sg_9-id"
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_0",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_0-id",
+            "tags": {
+              "Name": "tg_0"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_1",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_1-id",
+            "tags": {
+              "Name": "tg_1"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_2",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_2-id",
+            "tags": {
+              "Name": "tg_2"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_3",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_3-id",
+            "tags": {
+              "Name": "tg_3"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_4",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_4-id",
+            "tags": {
+              "Name": "tg_4"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_5",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_5-id",
+            "tags": {
+              "Name": "tg_5"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_6",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_6-id",
+            "tags": {
+              "Name": "tg_6"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_7",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_7-id",
+            "tags": {
+              "Name": "tg_7"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_8",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_8-id",
+            "tags": {
+              "Name": "tg_8"
+            },
+            "vpc_id": "aws_vpc-vpc_0-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_target_group.tg_9",
+          "mode": "managed",
+          "type": "aws_lb_target_group",
+          "name": "tg_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_target_group-tg_9-id",
+            "tags": {
+              "Name": "tg_9"
+            },
+            "vpc_id": "aws_vpc-vpc_1-id",
+            "port": 8080,
+            "protocol": "HTTP",
+            "target_type": "instance"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_0",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_0-id",
+            "tags": {
+              "Name": "listener_0"
+            },
+            "load_balancer_arn": "aws_lb-alb_0-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_0-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_1",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_1-id",
+            "tags": {
+              "Name": "listener_1"
+            },
+            "load_balancer_arn": "aws_lb-alb_1-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_1-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_2",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_2-id",
+            "tags": {
+              "Name": "listener_2"
+            },
+            "load_balancer_arn": "aws_lb-alb_2-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_2-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_3",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_3-id",
+            "tags": {
+              "Name": "listener_3"
+            },
+            "load_balancer_arn": "aws_lb-alb_3-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_3-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_4",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_4-id",
+            "tags": {
+              "Name": "listener_4"
+            },
+            "load_balancer_arn": "aws_lb-alb_4-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_4-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_5",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_5-id",
+            "tags": {
+              "Name": "listener_5"
+            },
+            "load_balancer_arn": "aws_lb-alb_5-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_5-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_6",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_6-id",
+            "tags": {
+              "Name": "listener_6"
+            },
+            "load_balancer_arn": "aws_lb-alb_6-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_6-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_7",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_7-id",
+            "tags": {
+              "Name": "listener_7"
+            },
+            "load_balancer_arn": "aws_lb-alb_7-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_7-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_8",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_8-id",
+            "tags": {
+              "Name": "listener_8"
+            },
+            "load_balancer_arn": "aws_lb-alb_8-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_8-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_lb_listener.listener_9",
+          "mode": "managed",
+          "type": "aws_lb_listener",
+          "name": "listener_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_lb_listener-listener_9-id",
+            "tags": {
+              "Name": "listener_9"
+            },
+            "load_balancer_arn": "aws_lb-alb_9-id",
+            "port": 80,
+            "default_action": [
+              {
+                "type": "forward",
+                "target_group_arn": "aws_lb_target_group-tg_9-id"
+              }
+            ]
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_0",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_0-id",
+            "tags": {
+              "Name": "ecs_cluster_0"
+            },
+            "name": "cluster-0"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_1",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_1-id",
+            "tags": {
+              "Name": "ecs_cluster_1"
+            },
+            "name": "cluster-1"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_2",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_2-id",
+            "tags": {
+              "Name": "ecs_cluster_2"
+            },
+            "name": "cluster-2"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_3",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_3-id",
+            "tags": {
+              "Name": "ecs_cluster_3"
+            },
+            "name": "cluster-3"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_4",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_4-id",
+            "tags": {
+              "Name": "ecs_cluster_4"
+            },
+            "name": "cluster-4"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_5",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_5-id",
+            "tags": {
+              "Name": "ecs_cluster_5"
+            },
+            "name": "cluster-5"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_6",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_6-id",
+            "tags": {
+              "Name": "ecs_cluster_6"
+            },
+            "name": "cluster-6"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_7",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_7-id",
+            "tags": {
+              "Name": "ecs_cluster_7"
+            },
+            "name": "cluster-7"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_8",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_8-id",
+            "tags": {
+              "Name": "ecs_cluster_8"
+            },
+            "name": "cluster-8"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_cluster.ecs_cluster_9",
+          "mode": "managed",
+          "type": "aws_ecs_cluster",
+          "name": "ecs_cluster_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_cluster-ecs_cluster_9-id",
+            "tags": {
+              "Name": "ecs_cluster_9"
+            },
+            "name": "cluster-9"
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_0",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_0",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_0-id",
+            "tags": {
+              "Name": "ecs_service_0"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_0-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_0-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s0-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_1",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_1",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_1-id",
+            "tags": {
+              "Name": "ecs_service_1"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_1-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_1-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s1-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_2",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_2",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_2-id",
+            "tags": {
+              "Name": "ecs_service_2"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_2-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_2-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s2-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_3",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_3",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_3-id",
+            "tags": {
+              "Name": "ecs_service_3"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_3-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_3-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s3-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_4",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_4",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_4-id",
+            "tags": {
+              "Name": "ecs_service_4"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_4-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_4-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s0-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_5",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_5",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_5-id",
+            "tags": {
+              "Name": "ecs_service_5"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_5-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_5-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s1-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_6",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_6",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_6-id",
+            "tags": {
+              "Name": "ecs_service_6"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_6-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_6-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s2-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_7",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_7",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_7-id",
+            "tags": {
+              "Name": "ecs_service_7"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_7-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_7-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s3-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_8",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_8",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_8-id",
+            "tags": {
+              "Name": "ecs_service_8"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_8-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_8-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s0-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_9",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_9",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_9-id",
+            "tags": {
+              "Name": "ecs_service_9"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_9-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_9-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s1-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_10",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_10",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_10-id",
+            "tags": {
+              "Name": "ecs_service_10"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_0-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_0-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s2-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_11",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_11",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_11-id",
+            "tags": {
+              "Name": "ecs_service_11"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_1-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_1-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s3-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_12",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_12",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_12-id",
+            "tags": {
+              "Name": "ecs_service_12"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_2-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_2-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s0-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_13",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_13",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_13-id",
+            "tags": {
+              "Name": "ecs_service_13"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_3-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_3-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s1-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_14",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_14",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_14-id",
+            "tags": {
+              "Name": "ecs_service_14"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_4-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_4-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s2-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_15",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_15",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_15-id",
+            "tags": {
+              "Name": "ecs_service_15"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_5-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_5-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s3-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_16",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_16",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_16-id",
+            "tags": {
+              "Name": "ecs_service_16"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_6-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_6-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s0-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_17",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_17",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_17-id",
+            "tags": {
+              "Name": "ecs_service_17"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_7-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_7-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s1-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_18",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_18",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_18-id",
+            "tags": {
+              "Name": "ecs_service_18"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_8-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_8-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s2-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_19",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_19",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_19-id",
+            "tags": {
+              "Name": "ecs_service_19"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_9-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_9-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s3-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_20",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_20",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_20-id",
+            "tags": {
+              "Name": "ecs_service_20"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_0-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_0-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s0-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_21",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_21",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_21-id",
+            "tags": {
+              "Name": "ecs_service_21"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_1-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_1-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s1-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_22",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_22",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_22-id",
+            "tags": {
+              "Name": "ecs_service_22"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_2-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_2-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s2-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_23",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_23",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_23-id",
+            "tags": {
+              "Name": "ecs_service_23"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_3-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_3-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s3-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_24",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_24",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_24-id",
+            "tags": {
+              "Name": "ecs_service_24"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_4-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_4-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s0-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_25",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_25",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_25-id",
+            "tags": {
+              "Name": "ecs_service_25"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_5-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_5-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s1-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_26",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_26",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_26-id",
+            "tags": {
+              "Name": "ecs_service_26"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_6-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_6-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v0_s2-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        },
+        {
+          "address": "aws_ecs_service.ecs_service_27",
+          "mode": "managed",
+          "type": "aws_ecs_service",
+          "name": "ecs_service_27",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "id": "aws_ecs_service-ecs_service_27-id",
+            "tags": {
+              "Name": "ecs_service_27"
+            },
+            "cluster": "aws_ecs_cluster-ecs_cluster_7-id",
+            "desired_count": 2,
+            "load_balancer": [
+              {
+                "target_group_arn": "aws_lb_target_group-tg_7-id",
+                "container_name": "app",
+                "container_port": 8080
+              }
+            ],
+            "network_configuration": {
+              "subnets": [
+                "aws_subnet-subnet_v1_s3-id"
+              ]
+            }
+          },
+          "sensitive_values": {}
+        }
+      ]
+    }
+  }
+}

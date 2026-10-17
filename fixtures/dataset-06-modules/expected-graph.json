@@ -1,0 +1,552 @@
+{
+  "schemaVersion": "1.0",
+  "source": {
+    "engine": "unknown",
+    "kind": "plan",
+    "terraformVersion": "1.16.2",
+    "formatVersion": "1.2"
+  },
+  "nodes": [
+    {
+      "id": "n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "address": "aws_vpc.root_vpc",
+      "provider": "aws",
+      "resourceType": "aws_vpc",
+      "resourceName": "root_vpc",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "cidr_block": "10.60.0.0/16",
+        "tags": {
+          "Name": "mod-vpc"
+        }
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_vpc.root_vpc",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_vpc.root_vpc",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "default_network_acl_id",
+        "default_route_table_id",
+        "default_security_group_id",
+        "dhcp_options_id",
+        "enable_dns_hostnames",
+        "enable_network_address_usage_metrics",
+        "id",
+        "ipv6_association_id",
+        "ipv6_cidr_block",
+        "ipv6_cidr_block_network_border_group",
+        "main_route_table_id",
+        "owner_id"
+      ]
+    },
+    {
+      "id": "n_61ea689a03d99d4ae34cde20d474d180ab275ba5739a6ba552c7b114a4d54111",
+      "address": "module.network.aws_subnet.mod_subnets[0]",
+      "provider": "aws",
+      "resourceType": "aws_subnet",
+      "resourceName": "mod_subnets",
+      "mode": "managed",
+      "moduleAddress": "module.network",
+      "scope": {
+        "availabilityZones": [
+          "ap-northeast-1a"
+        ]
+      },
+      "attributes": {
+        "availability_zone": "ap-northeast-1a",
+        "cidr_block": "10.60.0.0/24",
+        "ipv6_cidr_block": null,
+        "tags": {
+          "Name": "mod-sub-0"
+        }
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.network.aws_subnet.mod_subnets[0]",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.network.aws_subnet.mod_subnets[0]",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "availability_zone_id",
+        "id",
+        "ipv6_cidr_block_association_id",
+        "owner_id",
+        "private_dns_hostname_type_on_launch",
+        "vpc_id"
+      ]
+    },
+    {
+      "id": "n_a8506086f863465be09d9e8f6161e130c508753187d20b27dbf6da12c3ff3bcd",
+      "address": "module.network.aws_subnet.mod_subnets[1]",
+      "provider": "aws",
+      "resourceType": "aws_subnet",
+      "resourceName": "mod_subnets",
+      "mode": "managed",
+      "moduleAddress": "module.network",
+      "scope": {
+        "availabilityZones": [
+          "ap-northeast-1a"
+        ]
+      },
+      "attributes": {
+        "availability_zone": "ap-northeast-1a",
+        "cidr_block": "10.60.1.0/24",
+        "ipv6_cidr_block": null,
+        "tags": {
+          "Name": "mod-sub-1"
+        }
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.network.aws_subnet.mod_subnets[1]",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.network.aws_subnet.mod_subnets[1]",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "availability_zone_id",
+        "id",
+        "ipv6_cidr_block_association_id",
+        "owner_id",
+        "private_dns_hostname_type_on_launch",
+        "vpc_id"
+      ]
+    },
+    {
+      "id": "n_69e62932e6022284114203eecd676f88ae3c1c813fc0323fefa590da86269560",
+      "address": "module.services[\"api\"].aws_security_group.svc",
+      "provider": "aws",
+      "resourceType": "aws_security_group",
+      "resourceName": "svc",
+      "mode": "managed",
+      "moduleAddress": "module.services[\"api\"]",
+      "scope": {},
+      "attributes": {
+        "name": "mod-sg-api"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"api\"].aws_security_group.svc",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"api\"].aws_security_group.svc",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "egress",
+        "id",
+        "ingress",
+        "name_prefix",
+        "owner_id",
+        "tags_all",
+        "vpc_id"
+      ],
+      "unresolvedReferencePaths": [
+        "description",
+        "name"
+      ]
+    },
+    {
+      "id": "n_822933eb80bf2c67fc3a66ba06bd607f2162ac979d3a692ee9e8769d2d4d09c1",
+      "address": "module.services[\"auth\"].aws_security_group.svc",
+      "provider": "aws",
+      "resourceType": "aws_security_group",
+      "resourceName": "svc",
+      "mode": "managed",
+      "moduleAddress": "module.services[\"auth\"]",
+      "scope": {},
+      "attributes": {
+        "name": "mod-sg-auth"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"auth\"].aws_security_group.svc",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"auth\"].aws_security_group.svc",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "egress",
+        "id",
+        "ingress",
+        "name_prefix",
+        "owner_id",
+        "tags_all",
+        "vpc_id"
+      ],
+      "unresolvedReferencePaths": [
+        "description",
+        "name"
+      ]
+    },
+    {
+      "id": "n_9fee3fcaeb8ce1d37c0ba447770d4b38231af5f351ae9822c01f5545f81d8a00",
+      "address": "module.services[\"api\"].module.subservice[0].aws_security_group.sub",
+      "provider": "aws",
+      "resourceType": "aws_security_group",
+      "resourceName": "sub",
+      "mode": "managed",
+      "moduleAddress": "module.services[\"api\"].module.subservice[0]",
+      "scope": {},
+      "attributes": {
+        "name": "nested-sg-api-0"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"api\"].module.subservice[0].aws_security_group.sub",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"api\"].module.subservice[0].aws_security_group.sub",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "egress",
+        "id",
+        "ingress",
+        "name_prefix",
+        "owner_id",
+        "tags_all",
+        "vpc_id"
+      ],
+      "unresolvedReferencePaths": [
+        "description",
+        "name"
+      ]
+    },
+    {
+      "id": "n_8884f10096c014c6d298d0d338f0f7307fc2b2e6e19cfe385db46bdba4ae3c98",
+      "address": "module.services[\"api\"].module.subservice[1].aws_security_group.sub",
+      "provider": "aws",
+      "resourceType": "aws_security_group",
+      "resourceName": "sub",
+      "mode": "managed",
+      "moduleAddress": "module.services[\"api\"].module.subservice[1]",
+      "scope": {},
+      "attributes": {
+        "name": "nested-sg-api-1"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"api\"].module.subservice[1].aws_security_group.sub",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"api\"].module.subservice[1].aws_security_group.sub",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "egress",
+        "id",
+        "ingress",
+        "name_prefix",
+        "owner_id",
+        "tags_all",
+        "vpc_id"
+      ],
+      "unresolvedReferencePaths": [
+        "description",
+        "name"
+      ]
+    },
+    {
+      "id": "n_4d921bbb387f2e0fd3159b17243eb0c1cbd24c69b0c56ef208a055c80cfbbd6c",
+      "address": "module.services[\"auth\"].module.subservice[0].aws_security_group.sub",
+      "provider": "aws",
+      "resourceType": "aws_security_group",
+      "resourceName": "sub",
+      "mode": "managed",
+      "moduleAddress": "module.services[\"auth\"].module.subservice[0]",
+      "scope": {},
+      "attributes": {
+        "name": "nested-sg-auth-0"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"auth\"].module.subservice[0].aws_security_group.sub",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"auth\"].module.subservice[0].aws_security_group.sub",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "egress",
+        "id",
+        "ingress",
+        "name_prefix",
+        "owner_id",
+        "tags_all",
+        "vpc_id"
+      ],
+      "unresolvedReferencePaths": [
+        "description",
+        "name"
+      ]
+    },
+    {
+      "id": "n_efb73267ee414065806aa58de2169fef082447c7e987ac1c44c1c1318ae33ce7",
+      "address": "module.services[\"auth\"].module.subservice[1].aws_security_group.sub",
+      "provider": "aws",
+      "resourceType": "aws_security_group",
+      "resourceName": "sub",
+      "mode": "managed",
+      "moduleAddress": "module.services[\"auth\"].module.subservice[1]",
+      "scope": {},
+      "attributes": {
+        "name": "nested-sg-auth-1"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"auth\"].module.subservice[1].aws_security_group.sub",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "module.services[\"auth\"].module.subservice[1].aws_security_group.sub",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "arn",
+        "egress",
+        "id",
+        "ingress",
+        "name_prefix",
+        "owner_id",
+        "tags_all",
+        "vpc_id"
+      ],
+      "unresolvedReferencePaths": [
+        "description",
+        "name"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "n_61ea689a03d99d4ae34cde20d474d180ab275ba5739a6ba552c7b114a4d54111-->associated_with-->n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "source": "n_61ea689a03d99d4ae34cde20d474d180ab275ba5739a6ba552c7b114a4d54111",
+      "target": "n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "module.network.aws_subnet.mod_subnets[0]",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_a8506086f863465be09d9e8f6161e130c508753187d20b27dbf6da12c3ff3bcd-->associated_with-->n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "source": "n_a8506086f863465be09d9e8f6161e130c508753187d20b27dbf6da12c3ff3bcd",
+      "target": "n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "module.network.aws_subnet.mod_subnets[1]",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_69e62932e6022284114203eecd676f88ae3c1c813fc0323fefa590da86269560-->associated_with-->n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "source": "n_69e62932e6022284114203eecd676f88ae3c1c813fc0323fefa590da86269560",
+      "target": "n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "module.services[\"api\"].aws_security_group.svc",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_822933eb80bf2c67fc3a66ba06bd607f2162ac979d3a692ee9e8769d2d4d09c1-->associated_with-->n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "source": "n_822933eb80bf2c67fc3a66ba06bd607f2162ac979d3a692ee9e8769d2d4d09c1",
+      "target": "n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "module.services[\"auth\"].aws_security_group.svc",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_9fee3fcaeb8ce1d37c0ba447770d4b38231af5f351ae9822c01f5545f81d8a00-->associated_with-->n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "source": "n_9fee3fcaeb8ce1d37c0ba447770d4b38231af5f351ae9822c01f5545f81d8a00",
+      "target": "n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "module.services[\"api\"].module.subservice[0].aws_security_group.sub",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_8884f10096c014c6d298d0d338f0f7307fc2b2e6e19cfe385db46bdba4ae3c98-->associated_with-->n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "source": "n_8884f10096c014c6d298d0d338f0f7307fc2b2e6e19cfe385db46bdba4ae3c98",
+      "target": "n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "module.services[\"api\"].module.subservice[1].aws_security_group.sub",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_4d921bbb387f2e0fd3159b17243eb0c1cbd24c69b0c56ef208a055c80cfbbd6c-->associated_with-->n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "source": "n_4d921bbb387f2e0fd3159b17243eb0c1cbd24c69b0c56ef208a055c80cfbbd6c",
+      "target": "n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "module.services[\"auth\"].module.subservice[0].aws_security_group.sub",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    },
+    {
+      "id": "n_efb73267ee414065806aa58de2169fef082447c7e987ac1c44c1c1318ae33ce7-->associated_with-->n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "source": "n_efb73267ee414065806aa58de2169fef082447c7e987ac1c44c1c1318ae33ce7",
+      "target": "n_731e1b016d8d5691b79e5edee5c1f8b5d4be7a9a492f5be2a1da9a000eafbf2b",
+      "type": "associated_with",
+      "knowledge": "inferred",
+      "evidence": [
+        {
+          "source": "configuration_reference",
+          "resourceAddress": "module.services[\"auth\"].module.subservice[1].aws_security_group.sub",
+          "attributePath": "vpc_id",
+          "description": "Configuration expression references a resource; not proof of business traffic."
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Plan contains output_changes; only resource architecture is rendered."
+  ]
+}

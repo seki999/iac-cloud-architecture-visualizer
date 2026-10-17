@@ -1,0 +1,10 @@
+node_modules
+dist
+coverage
+pnpm-lock.yaml
+.terraform
+.tf-plugin-cache
+fixtures/**/*.json
+examples/**/*.drawio
+*.tf
+*.md

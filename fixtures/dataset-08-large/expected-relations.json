@@ -1,0 +1,2126 @@
+[
+  {
+    "source": "aws_vpc.vpc_0",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_vpc.vpc_0",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s1",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_vpc.vpc_0",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_vpc.vpc_0",
+    "target": "aws_subnet.subnet_v0_s3",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s3",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_vpc.vpc_1",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s0",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_vpc.vpc_1",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_vpc.vpc_1",
+    "target": "aws_subnet.subnet_v1_s2",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s2",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_vpc.vpc_1",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_internet_gateway.igw_v0",
+    "target": "aws_vpc.vpc_0",
+    "type": "attached_to",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_internet_gateway.igw_v0",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_internet_gateway.igw_v1",
+    "target": "aws_vpc.vpc_1",
+    "type": "attached_to",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_internet_gateway.igw_v1",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_nat_gateway.nat_v0",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_nat_gateway.nat_v1",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table.rt_pub_v0",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table.rt_priv_v0",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table.rt_pub_v1",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table.rt_priv_v1",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v0_s0",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v0_s0",
+    "target": "aws_route_table.rt_pub_v0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v0_s1",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v0_s1",
+    "target": "aws_route_table.rt_pub_v0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v0_s2",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v0_s2",
+    "target": "aws_route_table.rt_priv_v0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v0_s3",
+    "target": "aws_subnet.subnet_v0_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v0_s3",
+    "target": "aws_route_table.rt_priv_v0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v1_s0",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v1_s0",
+    "target": "aws_route_table.rt_pub_v1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v1_s1",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v1_s1",
+    "target": "aws_route_table.rt_pub_v1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v1_s2",
+    "target": "aws_subnet.subnet_v1_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v1_s2",
+    "target": "aws_route_table.rt_priv_v1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v1_s3",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_route_table_association.rta_v1_s3",
+    "target": "aws_route_table.rt_priv_v1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_0",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_1",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_2",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_3",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_4",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_5",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_6",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_7",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_8",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_9",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_10",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_11",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_12",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_13",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_14",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_15",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_16",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_17",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_18",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_19",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_20",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_21",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_22",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_23",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_24",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_25",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_26",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_27",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_28",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_security_group.sg_29",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_instance.app_vm_0",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_0",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_0",
+    "target": "aws_security_group.sg_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_instance.app_vm_1",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_1",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_1",
+    "target": "aws_security_group.sg_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_instance.app_vm_2",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_2",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_2",
+    "target": "aws_security_group.sg_2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_instance.app_vm_3",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_3",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_3",
+    "target": "aws_security_group.sg_3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_instance.app_vm_4",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_4",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_4",
+    "target": "aws_security_group.sg_4",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_instance.app_vm_5",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_5",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_5",
+    "target": "aws_security_group.sg_5",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_instance.app_vm_6",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_6",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_6",
+    "target": "aws_security_group.sg_6",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_instance.app_vm_7",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_7",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_7",
+    "target": "aws_security_group.sg_7",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_instance.app_vm_8",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_8",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_8",
+    "target": "aws_security_group.sg_8",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_instance.app_vm_9",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_9",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_9",
+    "target": "aws_security_group.sg_9",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_instance.app_vm_10",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_10",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_10",
+    "target": "aws_security_group.sg_10",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_instance.app_vm_11",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_11",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_11",
+    "target": "aws_security_group.sg_11",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_instance.app_vm_12",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_12",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_12",
+    "target": "aws_security_group.sg_12",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_instance.app_vm_13",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_13",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_13",
+    "target": "aws_security_group.sg_13",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_instance.app_vm_14",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_14",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_14",
+    "target": "aws_security_group.sg_14",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_instance.app_vm_15",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_15",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_15",
+    "target": "aws_security_group.sg_15",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_instance.app_vm_16",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_16",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_16",
+    "target": "aws_security_group.sg_16",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_instance.app_vm_17",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_17",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_17",
+    "target": "aws_security_group.sg_17",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_instance.app_vm_18",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_18",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_18",
+    "target": "aws_security_group.sg_18",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_instance.app_vm_19",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_19",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_19",
+    "target": "aws_security_group.sg_19",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_instance.app_vm_20",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_20",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_20",
+    "target": "aws_security_group.sg_20",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_instance.app_vm_21",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_21",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_21",
+    "target": "aws_security_group.sg_21",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_instance.app_vm_22",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_22",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_22",
+    "target": "aws_security_group.sg_22",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_instance.app_vm_23",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_23",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_23",
+    "target": "aws_security_group.sg_23",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_instance.app_vm_24",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_24",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_24",
+    "target": "aws_security_group.sg_24",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_instance.app_vm_25",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_25",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_25",
+    "target": "aws_security_group.sg_25",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_instance.app_vm_26",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_26",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_26",
+    "target": "aws_security_group.sg_26",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_instance.app_vm_27",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_27",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_27",
+    "target": "aws_security_group.sg_27",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_instance.app_vm_28",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_28",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_28",
+    "target": "aws_security_group.sg_28",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_instance.app_vm_29",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_29",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_29",
+    "target": "aws_security_group.sg_29",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_instance.app_vm_30",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_30",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_30",
+    "target": "aws_security_group.sg_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_instance.app_vm_31",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_31",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_31",
+    "target": "aws_security_group.sg_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s0",
+    "target": "aws_instance.app_vm_32",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_32",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_32",
+    "target": "aws_security_group.sg_2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s1",
+    "target": "aws_instance.app_vm_33",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_33",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_33",
+    "target": "aws_security_group.sg_3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v0_s2",
+    "target": "aws_instance.app_vm_34",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_34",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_34",
+    "target": "aws_security_group.sg_4",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_subnet.subnet_v1_s3",
+    "target": "aws_instance.app_vm_35",
+    "type": "contains",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_35",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_instance.app_vm_35",
+    "target": "aws_security_group.sg_5",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_0",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_0",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_1",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_1",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_2",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_2",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_3",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_3",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_4",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_4",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_5",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_5",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_6",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_6",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_7",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_7",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_8",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_8",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_9",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_subnet_group.dbsng_9",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_0",
+    "target": "aws_security_group.sg_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_0",
+    "target": "aws_db_subnet_group.dbsng_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_1",
+    "target": "aws_security_group.sg_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_1",
+    "target": "aws_db_subnet_group.dbsng_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_2",
+    "target": "aws_security_group.sg_2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_2",
+    "target": "aws_db_subnet_group.dbsng_2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_3",
+    "target": "aws_security_group.sg_3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_3",
+    "target": "aws_db_subnet_group.dbsng_3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_4",
+    "target": "aws_security_group.sg_4",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_4",
+    "target": "aws_db_subnet_group.dbsng_4",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_5",
+    "target": "aws_security_group.sg_5",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_5",
+    "target": "aws_db_subnet_group.dbsng_5",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_6",
+    "target": "aws_security_group.sg_6",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_6",
+    "target": "aws_db_subnet_group.dbsng_6",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_7",
+    "target": "aws_security_group.sg_7",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_7",
+    "target": "aws_db_subnet_group.dbsng_7",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_8",
+    "target": "aws_security_group.sg_8",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_8",
+    "target": "aws_db_subnet_group.dbsng_8",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_9",
+    "target": "aws_security_group.sg_9",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_db_instance.rds_9",
+    "target": "aws_db_subnet_group.dbsng_9",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_0",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_0",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_0",
+    "target": "aws_security_group.sg_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_1",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_1",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_1",
+    "target": "aws_security_group.sg_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_2",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_2",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_2",
+    "target": "aws_security_group.sg_2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_3",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_3",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_3",
+    "target": "aws_security_group.sg_3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_4",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_4",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_4",
+    "target": "aws_security_group.sg_4",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_5",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_5",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_5",
+    "target": "aws_security_group.sg_5",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_6",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_6",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_6",
+    "target": "aws_security_group.sg_6",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_7",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_7",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_7",
+    "target": "aws_security_group.sg_7",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_8",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_8",
+    "target": "aws_subnet.subnet_v0_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_8",
+    "target": "aws_security_group.sg_8",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_9",
+    "target": "aws_subnet.subnet_v1_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_9",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_9",
+    "target": "aws_security_group.sg_9",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_0",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_1",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_2",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_3",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_4",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_5",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_6",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_7",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_8",
+    "target": "aws_vpc.vpc_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_9",
+    "target": "aws_vpc.vpc_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_0",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_0",
+    "target": "aws_ecs_cluster.ecs_cluster_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_0",
+    "target": "aws_ecs_service.ecs_service_0",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_1",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_1",
+    "target": "aws_ecs_cluster.ecs_cluster_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_1",
+    "target": "aws_ecs_service.ecs_service_1",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_2",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_2",
+    "target": "aws_ecs_cluster.ecs_cluster_2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_2",
+    "target": "aws_ecs_service.ecs_service_2",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_3",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_3",
+    "target": "aws_ecs_cluster.ecs_cluster_3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_3",
+    "target": "aws_ecs_service.ecs_service_3",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_4",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_4",
+    "target": "aws_ecs_cluster.ecs_cluster_4",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_4",
+    "target": "aws_ecs_service.ecs_service_4",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_5",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_5",
+    "target": "aws_ecs_cluster.ecs_cluster_5",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_5",
+    "target": "aws_ecs_service.ecs_service_5",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_6",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_6",
+    "target": "aws_ecs_cluster.ecs_cluster_6",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_6",
+    "target": "aws_ecs_service.ecs_service_6",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_7",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_7",
+    "target": "aws_ecs_cluster.ecs_cluster_7",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_7",
+    "target": "aws_ecs_service.ecs_service_7",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_8",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_8",
+    "target": "aws_ecs_cluster.ecs_cluster_8",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_8",
+    "target": "aws_ecs_service.ecs_service_8",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_9",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_9",
+    "target": "aws_ecs_cluster.ecs_cluster_9",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_9",
+    "target": "aws_ecs_service.ecs_service_9",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_10",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_10",
+    "target": "aws_ecs_cluster.ecs_cluster_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_0",
+    "target": "aws_ecs_service.ecs_service_10",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_11",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_11",
+    "target": "aws_ecs_cluster.ecs_cluster_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_1",
+    "target": "aws_ecs_service.ecs_service_11",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_12",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_12",
+    "target": "aws_ecs_cluster.ecs_cluster_2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_2",
+    "target": "aws_ecs_service.ecs_service_12",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_13",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_13",
+    "target": "aws_ecs_cluster.ecs_cluster_3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_3",
+    "target": "aws_ecs_service.ecs_service_13",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_14",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_14",
+    "target": "aws_ecs_cluster.ecs_cluster_4",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_4",
+    "target": "aws_ecs_service.ecs_service_14",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_15",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_15",
+    "target": "aws_ecs_cluster.ecs_cluster_5",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_5",
+    "target": "aws_ecs_service.ecs_service_15",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_16",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_16",
+    "target": "aws_ecs_cluster.ecs_cluster_6",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_6",
+    "target": "aws_ecs_service.ecs_service_16",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_17",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_17",
+    "target": "aws_ecs_cluster.ecs_cluster_7",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_7",
+    "target": "aws_ecs_service.ecs_service_17",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_18",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_18",
+    "target": "aws_ecs_cluster.ecs_cluster_8",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_8",
+    "target": "aws_ecs_service.ecs_service_18",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_19",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_19",
+    "target": "aws_ecs_cluster.ecs_cluster_9",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_9",
+    "target": "aws_ecs_service.ecs_service_19",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_20",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_20",
+    "target": "aws_ecs_cluster.ecs_cluster_0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_0",
+    "target": "aws_ecs_service.ecs_service_20",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_21",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_21",
+    "target": "aws_ecs_cluster.ecs_cluster_1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_1",
+    "target": "aws_ecs_service.ecs_service_21",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_22",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_22",
+    "target": "aws_ecs_cluster.ecs_cluster_2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_2",
+    "target": "aws_ecs_service.ecs_service_22",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_23",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_23",
+    "target": "aws_ecs_cluster.ecs_cluster_3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_3",
+    "target": "aws_ecs_service.ecs_service_23",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_24",
+    "target": "aws_subnet.subnet_v0_s0",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_24",
+    "target": "aws_ecs_cluster.ecs_cluster_4",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_4",
+    "target": "aws_ecs_service.ecs_service_24",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_25",
+    "target": "aws_subnet.subnet_v1_s1",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_25",
+    "target": "aws_ecs_cluster.ecs_cluster_5",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_5",
+    "target": "aws_ecs_service.ecs_service_25",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_26",
+    "target": "aws_subnet.subnet_v0_s2",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_26",
+    "target": "aws_ecs_cluster.ecs_cluster_6",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_6",
+    "target": "aws_ecs_service.ecs_service_26",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_27",
+    "target": "aws_subnet.subnet_v1_s3",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_ecs_service.ecs_service_27",
+    "target": "aws_ecs_cluster.ecs_cluster_7",
+    "type": "associated_with",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb_target_group.tg_7",
+    "target": "aws_ecs_service.ecs_service_27",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_0",
+    "target": "aws_lb_target_group.tg_0",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_1",
+    "target": "aws_lb_target_group.tg_1",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_2",
+    "target": "aws_lb_target_group.tg_2",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_3",
+    "target": "aws_lb_target_group.tg_3",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_4",
+    "target": "aws_lb_target_group.tg_4",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_5",
+    "target": "aws_lb_target_group.tg_5",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_6",
+    "target": "aws_lb_target_group.tg_6",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_7",
+    "target": "aws_lb_target_group.tg_7",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_8",
+    "target": "aws_lb_target_group.tg_8",
+    "type": "targets",
+    "knowledge": "known"
+  },
+  {
+    "source": "aws_lb.alb_9",
+    "target": "aws_lb_target_group.tg_9",
+    "type": "targets",
+    "knowledge": "known"
+  }
+]

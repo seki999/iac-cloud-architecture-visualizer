@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="page_0_overview" name="Overview">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1587" pageHeight="1123">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="header_title" value="AWS Cloud Architecture Overview" style="text;html=0;align=left;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="900" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend" value="Relationship legend: contains = scope; associated_with = binding; targets = configured target; routes_to = configured route. IaC-only references/depends_on are kept in the graph model and not drawn.
+Solid = known; dashed = inferred/unknown. Unknown IDs remain unresolved. Routes do not prove reachability. AZ frames group subnets by their recorded availability_zone only.
+Plan contains output_changes; only resource architecture is rendered.
+No architecture rule for terraform_data; preserved as a generic node." style="text;html=0;align=left;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="1200" height="110" as="geometry"/>
+        </mxCell>
+        <object id="n_60c766827c79af0544b43726a3c5d7f745e1fc9f9bbad880229a0b2d291bfe70" label="create_before_destroy_replacement [UNKNOWN ID]
+[Generic: terraform_data]" terraform_address="terraform_data.create_before_destroy_replacement" resource_type="terraform_data" knowledge_state="unknown" category="other" metadata="{&quot;provider&quot;:&quot;terraform&quot;,&quot;evidence&quot;:[{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.create_before_destroy_replacement&quot;,&quot;description&quot;:&quot;Planned actions: create, delete&quot;},{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.create_before_destroy_replacement&quot;,&quot;description&quot;:&quot;Resource present in planned_values&quot;}],&quot;change&quot;:{&quot;actions&quot;:[&quot;create&quot;,&quot;delete&quot;],&quot;actionReason&quot;:&quot;replace_because_cannot_update&quot;,&quot;replacePaths&quot;:[[&quot;triggers_replace&quot;]]},&quot;unknownAttributePaths&quot;:[&quot;id&quot;,&quot;output&quot;]}" semantic_scope="{}" aggregated_resources="[]">
+          <mxCell style="whiteSpace=wrap;html=0;rounded=1;arcSize=8;fontSize=12;spacing=6;align=left;verticalAlign=middle;fillColor=#eeeff0;strokeColor=#545B64;fontColor=#16191F;dashed=1;" vertex="1" parent="1">
+            <mxGeometry x="40" y="260" width="180" height="90" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="n_a6dd978f8df327f03d3b70c5b1cc44ae41cd3df00837100a01917c2d7f5e8e58" label="stable
+[Generic: terraform_data]" terraform_address="terraform_data.stable" resource_type="terraform_data" knowledge_state="known" category="other" metadata="{&quot;id&quot;:&quot;18400ef8-8fb7-6284-dc4c-cb8624efa022&quot;,&quot;provider&quot;:&quot;terraform&quot;,&quot;evidence&quot;:[{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.stable&quot;,&quot;description&quot;:&quot;Planned actions: no-op&quot;},{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.stable&quot;,&quot;description&quot;:&quot;Resource present in planned_values&quot;}],&quot;change&quot;:{&quot;actions&quot;:[&quot;no-op&quot;]}}" semantic_scope="{}" aggregated_resources="[]">
+          <mxCell style="whiteSpace=wrap;html=0;rounded=1;arcSize=8;fontSize=12;spacing=6;align=left;verticalAlign=middle;fillColor=#eeeff0;strokeColor=#545B64;fontColor=#16191F;" vertex="1" parent="1">
+            <mxGeometry x="40" y="390" width="180" height="90" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="n_f4d8223cf5d978599f93725e01207c3907afa282a39924f25142cf0e35bc8870" label="standard_replacement [UNKNOWN ID]
+[Generic: terraform_data]" terraform_address="terraform_data.standard_replacement" resource_type="terraform_data" knowledge_state="unknown" category="other" metadata="{&quot;provider&quot;:&quot;terraform&quot;,&quot;evidence&quot;:[{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.standard_replacement&quot;,&quot;description&quot;:&quot;Planned actions: delete, create&quot;},{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.standard_replacement&quot;,&quot;description&quot;:&quot;Resource present in planned_values&quot;}],&quot;change&quot;:{&quot;actions&quot;:[&quot;delete&quot;,&quot;create&quot;],&quot;actionReason&quot;:&quot;replace_because_cannot_update&quot;,&quot;replacePaths&quot;:[[&quot;triggers_replace&quot;]]},&quot;unknownAttributePaths&quot;:[&quot;id&quot;,&quot;output&quot;]}" semantic_scope="{}" aggregated_resources="[]">
+          <mxCell style="whiteSpace=wrap;html=0;rounded=1;arcSize=8;fontSize=12;spacing=6;align=left;verticalAlign=middle;fillColor=#eeeff0;strokeColor=#545B64;fontColor=#16191F;dashed=1;" vertex="1" parent="1">
+            <mxGeometry x="40" y="130" width="180" height="90" as="geometry"/>
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page_1_network" name="Network">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1587" pageHeight="1123">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="header_title" value="Detailed Network Architecture View" style="text;html=0;align=left;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="900" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend" value="Relationship legend: contains = scope; associated_with = binding; targets = configured target; routes_to = configured route. IaC-only references/depends_on are kept in the graph model and not drawn.
+Solid = known; dashed = inferred/unknown. Unknown IDs remain unresolved. Routes do not prove reachability. AZ frames group subnets by their recorded availability_zone only.
+Plan contains output_changes; only resource architecture is rendered.
+No architecture rule for terraform_data; preserved as a generic node." style="text;html=0;align=left;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="1200" height="110" as="geometry"/>
+        </mxCell>
+        <object id="n_60c766827c79af0544b43726a3c5d7f745e1fc9f9bbad880229a0b2d291bfe70" label="create_before_destroy_replacement [UNKNOWN ID]
+[Generic: terraform_data]" terraform_address="terraform_data.create_before_destroy_replacement" resource_type="terraform_data" knowledge_state="unknown" category="other" metadata="{&quot;provider&quot;:&quot;terraform&quot;,&quot;evidence&quot;:[{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.create_before_destroy_replacement&quot;,&quot;description&quot;:&quot;Planned actions: create, delete&quot;},{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.create_before_destroy_replacement&quot;,&quot;description&quot;:&quot;Resource present in planned_values&quot;}],&quot;change&quot;:{&quot;actions&quot;:[&quot;create&quot;,&quot;delete&quot;],&quot;actionReason&quot;:&quot;replace_because_cannot_update&quot;,&quot;replacePaths&quot;:[[&quot;triggers_replace&quot;]]},&quot;unknownAttributePaths&quot;:[&quot;id&quot;,&quot;output&quot;]}" semantic_scope="{}" aggregated_resources="[]">
+          <mxCell style="whiteSpace=wrap;html=0;rounded=1;arcSize=8;fontSize=12;spacing=6;align=left;verticalAlign=middle;fillColor=#eeeff0;strokeColor=#545B64;fontColor=#16191F;dashed=1;" vertex="1" parent="1">
+            <mxGeometry x="40" y="260" width="180" height="90" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="n_a6dd978f8df327f03d3b70c5b1cc44ae41cd3df00837100a01917c2d7f5e8e58" label="stable
+[Generic: terraform_data]" terraform_address="terraform_data.stable" resource_type="terraform_data" knowledge_state="known" category="other" metadata="{&quot;id&quot;:&quot;18400ef8-8fb7-6284-dc4c-cb8624efa022&quot;,&quot;provider&quot;:&quot;terraform&quot;,&quot;evidence&quot;:[{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.stable&quot;,&quot;description&quot;:&quot;Planned actions: no-op&quot;},{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.stable&quot;,&quot;description&quot;:&quot;Resource present in planned_values&quot;}],&quot;change&quot;:{&quot;actions&quot;:[&quot;no-op&quot;]}}" semantic_scope="{}" aggregated_resources="[]">
+          <mxCell style="whiteSpace=wrap;html=0;rounded=1;arcSize=8;fontSize=12;spacing=6;align=left;verticalAlign=middle;fillColor=#eeeff0;strokeColor=#545B64;fontColor=#16191F;" vertex="1" parent="1">
+            <mxGeometry x="40" y="390" width="180" height="90" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="n_f4d8223cf5d978599f93725e01207c3907afa282a39924f25142cf0e35bc8870" label="standard_replacement [UNKNOWN ID]
+[Generic: terraform_data]" terraform_address="terraform_data.standard_replacement" resource_type="terraform_data" knowledge_state="unknown" category="other" metadata="{&quot;provider&quot;:&quot;terraform&quot;,&quot;evidence&quot;:[{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.standard_replacement&quot;,&quot;description&quot;:&quot;Planned actions: delete, create&quot;},{&quot;source&quot;:&quot;plan_value&quot;,&quot;resourceAddress&quot;:&quot;terraform_data.standard_replacement&quot;,&quot;description&quot;:&quot;Resource present in planned_values&quot;}],&quot;change&quot;:{&quot;actions&quot;:[&quot;delete&quot;,&quot;create&quot;],&quot;actionReason&quot;:&quot;replace_because_cannot_update&quot;,&quot;replacePaths&quot;:[[&quot;triggers_replace&quot;]]},&quot;unknownAttributePaths&quot;:[&quot;id&quot;,&quot;output&quot;]}" semantic_scope="{}" aggregated_resources="[]">
+          <mxCell style="whiteSpace=wrap;html=0;rounded=1;arcSize=8;fontSize=12;spacing=6;align=left;verticalAlign=middle;fillColor=#eeeff0;strokeColor=#545B64;fontColor=#16191F;dashed=1;" vertex="1" parent="1">
+            <mxGeometry x="40" y="130" width="180" height="90" as="geometry"/>
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+

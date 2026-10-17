@@ -1,0 +1,7 @@
+{
+  "plan.json": {
+    "origin": "real-terraform-cli",
+    "terraformVersion": "1.16.2",
+    "command": "terraform show -json <planfile>"
+  }
+}

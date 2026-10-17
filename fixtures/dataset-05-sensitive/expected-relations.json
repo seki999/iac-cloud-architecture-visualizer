@@ -1,0 +1,26 @@
+[
+  {
+    "source": "aws_db_instance.sec_db",
+    "target": "aws_db_subnet_group.sec",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_db_subnet_group.sec",
+    "target": "aws_subnet.db",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_subnet.db",
+    "target": "aws_vpc.sec",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.sec",
+    "target": "aws_subnet.db",
+    "type": "contains",
+    "knowledge": "inferred"
+  }
+]

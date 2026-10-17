@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+
+# Terraform working files (fixtures are plan-only; never commit real state)
+.terraform/
+.tf-plugin-cache/
+*.tfplan
+*.tfstate
+*.tfstate.backup
+crash.log
+
+# Generated outputs from local runs
+/out/
+*.local.drawio

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "source": {
+    "engine": "unknown",
+    "kind": "plan",
+    "terraformVersion": "1.16.2",
+    "formatVersion": "1.2"
+  },
+  "nodes": [
+    {
+      "id": "n_7e0d83b403dcb2c89954dcd92bd8b65ce7ebadf1641bad1140f12147d743faa7",
+      "address": "aws_vpc.supported_vpc",
+      "provider": "aws",
+      "resourceType": "aws_vpc",
+      "resourceName": "supported_vpc",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "cidr_block": "10.90.0.0/16",
+        "tags": {
+          "Name": "ds09-supported-vpc"
+        }
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_vpc.supported_vpc",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "aws_vpc.supported_vpc",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "id"
+      ]
+    },
+    {
+      "id": "n_958939ab21342c0e4cdf4aba57b3550a9f5f24d9574dc72715a165e58a8afe67",
+      "address": "google_compute_instance.custom_gcp",
+      "provider": "google",
+      "resourceType": "google_compute_instance",
+      "resourceName": "custom_gcp",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "name": "demo-gcp-instance"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "google_compute_instance.custom_gcp",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "google_compute_instance.custom_gcp",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "id"
+      ]
+    },
+    {
+      "id": "n_4f1c69df467f25582b755bbc402ae38a52f985fa97e5e71d6b34f12583e5b207",
+      "address": "azurerm_virtual_network.custom_azure",
+      "provider": "azurerm",
+      "resourceType": "azurerm_virtual_network",
+      "resourceName": "custom_azure",
+      "mode": "managed",
+      "scope": {},
+      "attributes": {
+        "name": "demo-azure-vnet"
+      },
+      "knowledge": "unknown",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      },
+      "evidence": [
+        {
+          "source": "plan_value",
+          "resourceAddress": "azurerm_virtual_network.custom_azure",
+          "description": "Planned actions: create"
+        },
+        {
+          "source": "plan_value",
+          "resourceAddress": "azurerm_virtual_network.custom_azure",
+          "description": "Resource present in planned_values"
+        }
+      ],
+      "unknownAttributePaths": [
+        "id"
+      ]
+    }
+  ],
+  "edges": [],
+  "warnings": []
+}

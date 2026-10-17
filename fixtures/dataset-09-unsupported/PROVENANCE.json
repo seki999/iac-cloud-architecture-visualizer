@@ -1,0 +1,9 @@
+{
+  "plan.json": {
+    "origin": "synthetic",
+    "description": "Hand-constructed multi-provider fallback input"
+  },
+  "state.json": {
+    "origin": "synthetic"
+  }
+}

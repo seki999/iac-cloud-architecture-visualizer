@@ -1,0 +1,654 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.16.2",
+  "variables": {
+    "custom_api_token": {
+      "value": "TOKEN_SECRET_DO_NOT_EXPORT_67890"
+    },
+    "db_password": {
+      "value": "TEST_SECRET_DO_NOT_EXPORT_12345"
+    }
+  },
+  "planned_values": {
+    "outputs": {
+      "secret_db_pass": {
+        "sensitive": true,
+        "type": "string",
+        "value": "TEST_SECRET_DO_NOT_EXPORT_12345"
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_db_instance.sec_db",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "sec_db",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 2,
+          "values": {
+            "allocated_storage": 20,
+            "allow_major_version_upgrade": null,
+            "apply_immediately": false,
+            "auto_minor_version_upgrade": true,
+            "blue_green_update": [],
+            "copy_tags_to_snapshot": false,
+            "custom_iam_instance_profile": null,
+            "customer_owned_ip_enabled": null,
+            "db_subnet_group_name": "sec-db-subnets",
+            "dedicated_log_volume": false,
+            "delete_automated_backups": true,
+            "deletion_protection": null,
+            "domain": null,
+            "domain_auth_secret_arn": null,
+            "domain_dns_ips": null,
+            "domain_iam_role_name": null,
+            "domain_ou": null,
+            "enabled_cloudwatch_logs_exports": null,
+            "engine": "postgres",
+            "final_snapshot_identifier": null,
+            "iam_database_authentication_enabled": null,
+            "identifier": "sec-db-instance",
+            "instance_class": "db.t4g.micro",
+            "manage_master_user_password": null,
+            "max_allocated_storage": null,
+            "monitoring_interval": 0,
+            "password": "TEST_SECRET_DO_NOT_EXPORT_12345",
+            "password_wo": null,
+            "password_wo_version": null,
+            "performance_insights_enabled": false,
+            "publicly_accessible": false,
+            "replicate_source_db": null,
+            "restore_to_point_in_time": [],
+            "s3_import": [],
+            "skip_final_snapshot": true,
+            "storage_encrypted": null,
+            "tags": {
+              "Name": "sec-db",
+              "UnsafeSensitiveTag": "TEST_SECRET_DO_NOT_EXPORT_12345"
+            },
+            "tags_all": {
+              "Name": "sec-db",
+              "UnsafeSensitiveTag": "TEST_SECRET_DO_NOT_EXPORT_12345"
+            },
+            "timeouts": null,
+            "upgrade_storage_config": null,
+            "username": "secadmin"
+          },
+          "sensitive_values": {
+            "blue_green_update": [],
+            "listener_endpoint": [],
+            "master_user_secret": [],
+            "password": true,
+            "password_wo": true,
+            "replicas": [],
+            "restore_to_point_in_time": [],
+            "s3_import": [],
+            "tags": {},
+            "tags_all": {},
+            "vpc_security_group_ids": []
+          }
+        },
+        {
+          "address": "aws_db_subnet_group.sec",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "sec",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "description": "Managed by Terraform",
+            "name": "sec-db-subnets",
+            "tags": null
+          },
+          "sensitive_values": {
+            "subnet_ids": [],
+            "supported_network_types": [],
+            "tags_all": {}
+          }
+        },
+        {
+          "address": "aws_subnet.db",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "db",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "ap-northeast-1a",
+            "cidr_block": "10.50.1.0/24",
+            "customer_owned_ipv4_pool": null,
+            "enable_dns64": false,
+            "enable_lni_at_device_index": null,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "ipv6_cidr_block": null,
+            "ipv6_native": false,
+            "map_customer_owned_ip_on_launch": null,
+            "map_public_ip_on_launch": false,
+            "outpost_arn": null,
+            "tags": {
+              "Name": "sec-db-subnet"
+            },
+            "tags_all": {
+              "Name": "sec-db-subnet"
+            },
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "tags": {},
+            "tags_all": {}
+          }
+        },
+        {
+          "address": "aws_vpc.sec",
+          "mode": "managed",
+          "type": "aws_vpc",
+          "name": "sec",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "assign_generated_ipv6_cidr_block": null,
+            "cidr_block": "10.50.0.0/16",
+            "enable_dns_support": true,
+            "instance_tenancy": "default",
+            "ipv4_ipam_pool_id": null,
+            "ipv4_netmask_length": null,
+            "ipv6_ipam_pool_id": null,
+            "ipv6_netmask_length": null,
+            "tags": {
+              "Name": "sec-vpc"
+            },
+            "tags_all": {
+              "Name": "sec-vpc"
+            }
+          },
+          "sensitive_values": {
+            "tags": {},
+            "tags_all": {}
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_db_instance.sec_db",
+      "mode": "managed",
+      "type": "aws_db_instance",
+      "name": "sec_db",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "allocated_storage": 20,
+          "allow_major_version_upgrade": null,
+          "apply_immediately": false,
+          "auto_minor_version_upgrade": true,
+          "blue_green_update": [],
+          "copy_tags_to_snapshot": false,
+          "custom_iam_instance_profile": null,
+          "customer_owned_ip_enabled": null,
+          "db_subnet_group_name": "sec-db-subnets",
+          "dedicated_log_volume": false,
+          "delete_automated_backups": true,
+          "deletion_protection": null,
+          "domain": null,
+          "domain_auth_secret_arn": null,
+          "domain_dns_ips": null,
+          "domain_iam_role_name": null,
+          "domain_ou": null,
+          "enabled_cloudwatch_logs_exports": null,
+          "engine": "postgres",
+          "final_snapshot_identifier": null,
+          "iam_database_authentication_enabled": null,
+          "identifier": "sec-db-instance",
+          "instance_class": "db.t4g.micro",
+          "manage_master_user_password": null,
+          "max_allocated_storage": null,
+          "monitoring_interval": 0,
+          "password": "TEST_SECRET_DO_NOT_EXPORT_12345",
+          "password_wo": null,
+          "password_wo_version": null,
+          "performance_insights_enabled": false,
+          "publicly_accessible": false,
+          "replicate_source_db": null,
+          "restore_to_point_in_time": [],
+          "s3_import": [],
+          "skip_final_snapshot": true,
+          "storage_encrypted": null,
+          "tags": {
+            "Name": "sec-db",
+            "UnsafeSensitiveTag": "TEST_SECRET_DO_NOT_EXPORT_12345"
+          },
+          "tags_all": {
+            "Name": "sec-db",
+            "UnsafeSensitiveTag": "TEST_SECRET_DO_NOT_EXPORT_12345"
+          },
+          "timeouts": null,
+          "upgrade_storage_config": null,
+          "username": "secadmin"
+        },
+        "after_unknown": {
+          "address": true,
+          "arn": true,
+          "availability_zone": true,
+          "backup_retention_period": true,
+          "backup_target": true,
+          "backup_window": true,
+          "blue_green_update": [],
+          "ca_cert_identifier": true,
+          "character_set_name": true,
+          "database_insights_mode": true,
+          "db_name": true,
+          "domain_fqdn": true,
+          "endpoint": true,
+          "engine_lifecycle_support": true,
+          "engine_version": true,
+          "engine_version_actual": true,
+          "hosted_zone_id": true,
+          "id": true,
+          "identifier_prefix": true,
+          "iops": true,
+          "kms_key_id": true,
+          "latest_restorable_time": true,
+          "license_model": true,
+          "listener_endpoint": true,
+          "maintenance_window": true,
+          "master_user_secret": true,
+          "master_user_secret_kms_key_id": true,
+          "monitoring_role_arn": true,
+          "multi_az": true,
+          "nchar_character_set_name": true,
+          "network_type": true,
+          "option_group_name": true,
+          "parameter_group_name": true,
+          "performance_insights_kms_key_id": true,
+          "performance_insights_retention_period": true,
+          "port": true,
+          "replica_mode": true,
+          "replicas": true,
+          "resource_id": true,
+          "restore_to_point_in_time": [],
+          "s3_import": [],
+          "snapshot_identifier": true,
+          "status": true,
+          "storage_throughput": true,
+          "storage_type": true,
+          "tags": {},
+          "tags_all": {},
+          "timezone": true,
+          "vpc_security_group_ids": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "blue_green_update": [],
+          "listener_endpoint": [],
+          "master_user_secret": [],
+          "password": true,
+          "password_wo": true,
+          "replicas": [],
+          "restore_to_point_in_time": [],
+          "s3_import": [],
+          "tags": {},
+          "tags_all": {},
+          "vpc_security_group_ids": []
+        }
+      }
+    },
+    {
+      "address": "aws_db_subnet_group.sec",
+      "mode": "managed",
+      "type": "aws_db_subnet_group",
+      "name": "sec",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "description": "Managed by Terraform",
+          "name": "sec-db-subnets",
+          "tags": null
+        },
+        "after_unknown": {
+          "arn": true,
+          "id": true,
+          "name_prefix": true,
+          "subnet_ids": true,
+          "supported_network_types": true,
+          "tags_all": true,
+          "vpc_id": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "subnet_ids": [],
+          "supported_network_types": [],
+          "tags_all": {}
+        }
+      }
+    },
+    {
+      "address": "aws_subnet.db",
+      "mode": "managed",
+      "type": "aws_subnet",
+      "name": "db",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "assign_ipv6_address_on_creation": false,
+          "availability_zone": "ap-northeast-1a",
+          "cidr_block": "10.50.1.0/24",
+          "customer_owned_ipv4_pool": null,
+          "enable_dns64": false,
+          "enable_lni_at_device_index": null,
+          "enable_resource_name_dns_a_record_on_launch": false,
+          "enable_resource_name_dns_aaaa_record_on_launch": false,
+          "ipv6_cidr_block": null,
+          "ipv6_native": false,
+          "map_customer_owned_ip_on_launch": null,
+          "map_public_ip_on_launch": false,
+          "outpost_arn": null,
+          "tags": {
+            "Name": "sec-db-subnet"
+          },
+          "tags_all": {
+            "Name": "sec-db-subnet"
+          },
+          "timeouts": null
+        },
+        "after_unknown": {
+          "arn": true,
+          "availability_zone_id": true,
+          "id": true,
+          "ipv6_cidr_block_association_id": true,
+          "owner_id": true,
+          "private_dns_hostname_type_on_launch": true,
+          "tags": {},
+          "tags_all": {},
+          "vpc_id": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "tags": {},
+          "tags_all": {}
+        }
+      }
+    },
+    {
+      "address": "aws_vpc.sec",
+      "mode": "managed",
+      "type": "aws_vpc",
+      "name": "sec",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "assign_generated_ipv6_cidr_block": null,
+          "cidr_block": "10.50.0.0/16",
+          "enable_dns_support": true,
+          "instance_tenancy": "default",
+          "ipv4_ipam_pool_id": null,
+          "ipv4_netmask_length": null,
+          "ipv6_ipam_pool_id": null,
+          "ipv6_netmask_length": null,
+          "tags": {
+            "Name": "sec-vpc"
+          },
+          "tags_all": {
+            "Name": "sec-vpc"
+          }
+        },
+        "after_unknown": {
+          "arn": true,
+          "default_network_acl_id": true,
+          "default_route_table_id": true,
+          "default_security_group_id": true,
+          "dhcp_options_id": true,
+          "enable_dns_hostnames": true,
+          "enable_network_address_usage_metrics": true,
+          "id": true,
+          "ipv6_association_id": true,
+          "ipv6_cidr_block": true,
+          "ipv6_cidr_block_network_border_group": true,
+          "main_route_table_id": true,
+          "owner_id": true,
+          "tags": {},
+          "tags_all": {}
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "tags": {},
+          "tags_all": {}
+        }
+      }
+    }
+  ],
+  "output_changes": {
+    "secret_db_pass": {
+      "actions": [
+        "create"
+      ],
+      "before": null,
+      "after": "TEST_SECRET_DO_NOT_EXPORT_12345",
+      "after_unknown": false,
+      "before_sensitive": true,
+      "after_sensitive": true
+    }
+  },
+  "prior_state": {
+    "format_version": "1.0",
+    "terraform_version": "1.16.2",
+    "values": {
+      "outputs": {
+        "secret_db_pass": {
+          "sensitive": true,
+          "value": "TEST_SECRET_DO_NOT_EXPORT_12345",
+          "type": "string"
+        }
+      },
+      "root_module": {}
+    }
+  },
+  "configuration": {
+    "provider_config": {
+      "aws": {
+        "name": "aws",
+        "full_name": "registry.terraform.io/hashicorp/aws",
+        "version_constraint": "~> 5.0",
+        "expressions": {
+          "access_key": {
+            "constant_value": "mock_access_key"
+          },
+          "region": {
+            "constant_value": "ap-northeast-1"
+          },
+          "secret_key": {
+            "constant_value": "mock_secret_key"
+          },
+          "skip_credentials_validation": {
+            "constant_value": true
+          },
+          "skip_metadata_api_check": {
+            "constant_value": true
+          },
+          "skip_region_validation": {
+            "constant_value": true
+          },
+          "skip_requesting_account_id": {
+            "constant_value": true
+          }
+        }
+      }
+    },
+    "root_module": {
+      "outputs": {
+        "secret_db_pass": {
+          "sensitive": true,
+          "expression": {
+            "references": [
+              "var.db_password"
+            ]
+          }
+        }
+      },
+      "resources": [
+        {
+          "address": "aws_db_instance.sec_db",
+          "mode": "managed",
+          "type": "aws_db_instance",
+          "name": "sec_db",
+          "provider_config_key": "aws",
+          "expressions": {
+            "allocated_storage": {
+              "constant_value": 20
+            },
+            "db_subnet_group_name": {
+              "references": [
+                "aws_db_subnet_group.sec.name",
+                "aws_db_subnet_group.sec"
+              ]
+            },
+            "engine": {
+              "constant_value": "postgres"
+            },
+            "identifier": {
+              "constant_value": "sec-db-instance"
+            },
+            "instance_class": {
+              "constant_value": "db.t4g.micro"
+            },
+            "password": {
+              "references": [
+                "var.db_password"
+              ]
+            },
+            "skip_final_snapshot": {
+              "constant_value": true
+            },
+            "tags": {
+              "constant_value": {
+                "Name": "sec-db",
+                "UnsafeSensitiveTag": "TEST_SECRET_DO_NOT_EXPORT_12345"
+              }
+            },
+            "username": {
+              "constant_value": "secadmin"
+            }
+          },
+          "schema_version": 2
+        },
+        {
+          "address": "aws_db_subnet_group.sec",
+          "mode": "managed",
+          "type": "aws_db_subnet_group",
+          "name": "sec",
+          "provider_config_key": "aws",
+          "expressions": {
+            "name": {
+              "constant_value": "sec-db-subnets"
+            },
+            "subnet_ids": {
+              "references": [
+                "aws_subnet.db.id",
+                "aws_subnet.db"
+              ]
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "aws_subnet.db",
+          "mode": "managed",
+          "type": "aws_subnet",
+          "name": "db",
+          "provider_config_key": "aws",
+          "expressions": {
+            "availability_zone": {
+              "constant_value": "ap-northeast-1a"
+            },
+            "cidr_block": {
+              "constant_value": "10.50.1.0/24"
+            },
+            "tags": {
+              "constant_value": {
+                "Name": "sec-db-subnet"
+              }
+            },
+            "vpc_id": {
+              "references": [
+                "aws_vpc.sec.id",
+                "aws_vpc.sec"
+              ]
+            }
+          },
+          "schema_version": 1
+        },
+        {
+          "address": "aws_vpc.sec",
+          "mode": "managed",
+          "type": "aws_vpc",
+          "name": "sec",
+          "provider_config_key": "aws",
+          "expressions": {
+            "cidr_block": {
+              "constant_value": "10.50.0.0/16"
+            },
+            "tags": {
+              "constant_value": {
+                "Name": "sec-vpc"
+              }
+            }
+          },
+          "schema_version": 1
+        }
+      ],
+      "variables": {
+        "custom_api_token": {
+          "default": "TOKEN_SECRET_DO_NOT_EXPORT_67890",
+          "sensitive": true
+        },
+        "db_password": {
+          "default": "TEST_SECRET_DO_NOT_EXPORT_12345",
+          "sensitive": true
+        }
+      }
+    }
+  },
+  "relevant_attributes": [
+    {
+      "resource": "aws_db_subnet_group.sec",
+      "attribute": [
+        "name"
+      ]
+    },
+    {
+      "resource": "aws_subnet.db",
+      "attribute": [
+        "id"
+      ]
+    },
+    {
+      "resource": "aws_vpc.sec",
+      "attribute": [
+        "id"
+      ]
+    }
+  ],
+  "timestamp": "2026-01-01T00:00:00Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}

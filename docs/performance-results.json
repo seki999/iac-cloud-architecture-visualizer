@@ -1,0 +1,34 @@
+{
+  "node": "v24.20.0",
+  "platform": "win32",
+  "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+  "memoryGiB": 32,
+  "measuredAt": "2026-10-17T10:52:15.057Z",
+  "method": "One cold CLI process per input; both views; includes parsing, layout and XML write. Not a statistical benchmark.",
+  "results": [
+    {
+      "input": "fixtures/dataset-01-network/plan.json",
+      "resources": 22,
+      "milliseconds": 509,
+      "fallback": false
+    },
+    {
+      "input": "out/benchmark-50.json",
+      "resources": 50,
+      "milliseconds": 726,
+      "fallback": false
+    },
+    {
+      "input": "fixtures/dataset-08-large/state.json",
+      "resources": 200,
+      "milliseconds": 1202,
+      "fallback": false
+    },
+    {
+      "input": "out/benchmark-500.json",
+      "resources": 500,
+      "milliseconds": 1311,
+      "fallback": false
+    }
+  ]
+}

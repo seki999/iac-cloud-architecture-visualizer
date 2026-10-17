@@ -1,0 +1,62 @@
+[
+  {
+    "source": "module.network.aws_subnet.mod_subnets[0]",
+    "target": "aws_vpc.root_vpc",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "module.network.aws_subnet.mod_subnets[1]",
+    "target": "aws_vpc.root_vpc",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "module.services[\"api\"].aws_security_group.svc",
+    "target": "aws_vpc.root_vpc",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "module.services[\"auth\"].aws_security_group.svc",
+    "target": "aws_vpc.root_vpc",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "module.services[\"api\"].module.subservice[0].aws_security_group.sub",
+    "target": "aws_vpc.root_vpc",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "module.services[\"api\"].module.subservice[1].aws_security_group.sub",
+    "target": "aws_vpc.root_vpc",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "module.services[\"auth\"].module.subservice[0].aws_security_group.sub",
+    "target": "aws_vpc.root_vpc",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "module.services[\"auth\"].module.subservice[1].aws_security_group.sub",
+    "target": "aws_vpc.root_vpc",
+    "type": "associated_with",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.root_vpc",
+    "target": "module.network.aws_subnet.mod_subnets[0]",
+    "type": "contains",
+    "knowledge": "inferred"
+  },
+  {
+    "source": "aws_vpc.root_vpc",
+    "target": "module.network.aws_subnet.mod_subnets[1]",
+    "type": "contains",
+    "knowledge": "inferred"
+  }
+]
