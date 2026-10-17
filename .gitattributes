@@ -1,0 +1,3 @@
+# Prettier enforces LF; keep LF on every OS checkout (incl. Windows CI).
+* text=auto eol=lf
+*.exe binary
